@@ -37,13 +37,13 @@ function nextPrev(n) {
             x[currentTab].style.display = "none";
             // Increase or decrease the current tab by 1:
             currentTab = currentTab + n;
-
+            //testing git
             showTab(currentTab);
             }
         }
     else if(currentTab==1 && n==1){
 
-        dob = document.getElementById("dob");
+        //dob = document.getElementById("dob");
         gender = document.getElementById("gender");
         nc = document.getElementById("nc");
         ns = document.getElementById("ns");
