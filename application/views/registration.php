@@ -454,7 +454,7 @@
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
                                                         <select name="gender" id="edu">
-                                                            <option disabled="disabled" selected="selected">Education</option>
+                                                            <option disabled="disabled" value="0" selected="selected">Education</option>
                                                             <option value="Graduate">Graduate</option>
                                                              <option value="B.Tech">B.Tech</option>
                                                             <option value="Post graduate">Post graduate</option>
@@ -480,7 +480,7 @@
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
                                                         <select name="gender" id="wp">
-                                                            <option disabled="disabled" selected="selected">Work Profession </option>
+                                                            <option disabled="disabled" value="0" selected="selected">Work Profession </option>
                                                             
                                                   <option value="Architect">Architect</option>
                                                   <option value="Engineer">Engineer</option>
@@ -522,7 +522,7 @@
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
                                                         <select name="gender" id="nl">
-                                                            <option disabled="disabled" selected="selected">Native Language </option>
+                                                            <option value="0" disabled="disabled" selected="selected">Native Language </option>
                                                              <option value="Arabic">Arabic</option>
                                                               <option value="Bengali">Bengali</option>
                                                               <option value="Bhojpuri">Bhojpuri</option>
@@ -552,7 +552,7 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple ">
-                                                        <select name="gender" id="lk" multiple="multiple" style="width: auto !important;">
+                                                        <select name="gender" id="lk" multiple="multiple">
 
                                                              <option value="Arabic">Arabic</option>
                                                               <option value="Bengali">Bengali</option>
@@ -587,7 +587,7 @@
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
                                                         <select name="gender" id="ec">
-                                                            <option disabled="disabled" selected="selected">Earning currency </option>
+                                                            <option disabled="disabled" value="0" selected="selected">Earning currency </option>
                                                              <option value="Australia Dollar">Australia Dollar</option>
                                               <option value="Bahrain Dinar">Bahrain Dinar</option>
                                               <option value="Bangladesh Taka">Bangladesh Taka</option>
@@ -633,12 +633,12 @@
                                     <div class="row row-space">
                                             <div class="col-2">
                                                  <div class="input-group">
-                                                         <input class="input--style-2" type="tel" placeholder="Father/Guardian name " name="res_code">
+                                                         <input class="input--style-2" id="gname" type="tel" placeholder="Father/Guardian name " name="res_code">
                                                  </div>
                                             </div>
                                              <div class="col-2">
                                                  <div class="input-group">
-                                                         <input class="input--style-2" type="tel" id="phone" placeholder="Father/Guardian contact number " name="res_code">
+                                                         <input class="input--style-2" type="tel" id="gphone" placeholder="Father/Guardian contact number " name="res_code">
                                                  </div>
                                             </div>
                                     </div>
@@ -646,7 +646,7 @@
                                             <div class="col-2">
                             
                                                     <label class="file">
-                                                    <input type="file" id="file" aria-label="File browser example">
+                                                    <input type="file" id="profilephoto" aria-label="File browser example">
                                                     <span class="file-custom">Profile Photo</span>
                                                     </label>
                                                  
@@ -654,7 +654,7 @@
                                              <div class="col-2">
                             
                                                     <label class="file">
-                                                    <input type="file" id="file" aria-label="File browser example">
+                                                    <input type="file" id="idproof" aria-label="File browser example">
                                                     <span class="file-custom">ID Proof</span>
                                                     </label>
                                                  
@@ -664,7 +664,7 @@
                                             <div class="col-2">
                             
                                                     <label class="file">
-                                                    <input type="file" id="file" aria-label="File browser example">
+                                                    <input type="file" id="biodata" aria-label="File browser example">
                                                     <span class="file-custom">Bio Data</span>
                                                     </label>
                                                  
