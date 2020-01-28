@@ -21,11 +21,15 @@ class registration_m extends CI_Model {
 		//print_r($result['logo']);
 		return $result;
     }
-    function fetch_city($state_id)
+    function fetch_city($state_id,$type)
 	{
         $this->load->database();
         $query = $this->db->query('select * from cities where state_id='.$state_id.' order by name ASC');
-		$output = '<option disabled="disabled" selected="selected">Native City <sup>*</sup></option>';
+        if($type=='ns'){
+		$output = '<option disabled="disabled" selected="selected" value="nci">Native City </option>';}
+        else{
+            $output = '<option disabled="disabled" selected="selected" value="cci">Residence City </option>';
+        }
 		foreach($query->result() as $row)
 		{
 		$output .= '<option value="'.$row->id.'">'.$row->name.'</option>';

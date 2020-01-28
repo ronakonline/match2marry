@@ -21,7 +21,7 @@ class Registration extends CI_Controller {
 		if($this->input->post('state_id'))
 		{
 			$this->load->model('registration_m');
-		echo $this->registration_m->fetch_city($this->input->post('state_id'));
+		echo $this->registration_m->fetch_city($this->input->post('state_id'),$this->input->post('type'));
 		}
 	}
 }

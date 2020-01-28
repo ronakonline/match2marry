@@ -8,7 +8,7 @@
                         <div class="menu-fullwidth">
                             <div class="logo-wrapper order-lg-0 order-sm-1">
                                 <div class="logo logo-top">
-                                    <a href="index.html"><img src="<?php echo base_url();?>assets/images/111.png" alt="logo image" class="img-fluid" height="300px" width="300px"></a>
+                                    <a href="<?php echo base_url();?>"><img src="<?php echo base_url();?>assets/images/111.png" alt="logo image" class="img-fluid" height="300px" width="300px"></a>
                                 </div>
                             </div><!-- ends: .logo-wrapper -->
 
