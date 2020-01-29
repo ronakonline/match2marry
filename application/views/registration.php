@@ -75,7 +75,8 @@
                 <div class="card-body">
                     <br><br>
                     <h2 class="title" id="title">Registration</h2>
-                    <form method="POST" id="regForm" action="Registration/register">
+                    <?php echo form_open_multipart('Registration/register'); ?>
+<!--                    <form enctype="multipart/form-data" method="POST" id="regForm" action="Registration/register" >-->
                        
                                     <div class="tab">
                                    
@@ -634,12 +635,12 @@
                                     <div class="row row-space">
                                             <div class="col-2">
                                                  <div class="input-group">
-                                                         <input class="input--style-2" id="gname" type="tel" placeholder="Father/Guardian name " name="res_code">
+                                                         <input class="input--style-2" id="gname" type="tel" placeholder="Father/Guardian name " name="gname">
                                                  </div>
                                             </div>
                                              <div class="col-2">
                                                  <div class="input-group">
-                                                         <input class="input--style-2" type="tel" id="gphone" placeholder="Father/Guardian contact number " name="res_code">
+                                                         <input class="input--style-2" type="tel" id="gphone" placeholder="Father/Guardian contact number " name="gphone">
                                                  </div>
                                             </div>
                                     </div>
@@ -647,7 +648,7 @@
                                             <div class="col-2">
 
                                                     <label class="file">
-                                                    <input type="file" id="profilephoto" aria-label="File browser example">
+                                                    <input type="file" name="profilephoto" id="profilephoto" aria-label="File browser example">
                                                     <span class="file-custom">Profile Photo</span>
                                                     </label>
 
@@ -655,7 +656,7 @@
                                              <div class="col-2">
 
                                                     <label class="file">
-                                                    <input type="file" id="idproof" aria-label="File browser example">
+                                                    <input type="file" name="ip" id="idproof" aria-label="File browser example">
                                                     <span class="file-custom">ID Proof</span>
                                                     </label>
 
@@ -665,7 +666,7 @@
                                             <div class="col-2">
 
                                                     <label class="file">
-                                                    <input type="file" id="biodata" aria-label="File browser example">
+                                                    <input type="file" name="biodata" id="biodata" aria-label="File browser example">
                                                     <span class="file-custom">Bio Data</span>
                                                     </label>
 
@@ -673,7 +674,7 @@
                                              <div class="col-2">
 
                                                     <div class="input-group">
-                                                         <input class="input--style-2" type="tel" placeholder="Facebook ID " name="res_code">
+                                                         <input class="input--style-2" name="fbid" type="tel" placeholder="Facebook ID " >
                                                  </div>
 
                                             </div>
@@ -1281,15 +1282,13 @@ function showTab(n) {
     document.getElementById("prevBtn").style.display = "inline";
   }
   if (n == (x.length - 1)) {
-    var sbt = document.getElementById("nextBtn").innerHTML = "Submit";
+    document.getElementById("nextBtn").innerHTML = "Submit";
     //document.getElementById("nextBtn").setAttribute('type', 'submit');
 
   } else {
     document.getElementById("nextBtn").innerHTML = "Next";
   }
-    if(sbt == "Submit"){
-        document.getElementById("nextBtn").setAttribute('type', 'submit');
-    }
+
   // ... and run a function that displays the correct step indicator:
 
 }

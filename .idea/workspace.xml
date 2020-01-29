@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="839784b0-7ce4-4627-85eb-76a525158616" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/pdf/Requirements.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/autoload.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/Registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Registration.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/registration.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/registration.js" afterDir="false" />
@@ -130,6 +132,8 @@
       <workItem from="1580228201490" duration="1231000" />
       <workItem from="1580234928299" duration="948000" />
       <workItem from="1580267638161" duration="3939000" />
+      <workItem from="1580308509312" duration="2528000" />
+      <workItem from="1580312745362" duration="2033000" />
     </task>
     <task id="LOCAL-00001" summary="dont know">
       <created>1579180458693</created>
@@ -223,10 +227,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="228" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1580133426694" />
-    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1580235782110">
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1580271635825">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1580235782110" />
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1580271635825" />
     <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1579265264604" />
     <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1579866752932">
       <screen x="0" y="0" width="1366" height="728" />
@@ -243,15 +247,19 @@
     </state>
     <state x="184" y="12" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1579696162167" />
     <state x="184" y="12" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1579264484168" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1580235789148">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1580271646040">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1580235789148" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1580271646040" />
     <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1579265269273" />
-    <state x="359" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1580267636013">
+    <state x="359" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1580313005561">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="359" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1580267636013" />
+    <state x="359" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1580313005561" />
     <state x="359" y="194" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1579261779948" />
+    <state x="391" y="156" key="git4idea.merge.GitPullDialog" timestamp="1580310627857">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="391" y="156" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1580310627857" />
   </component>
 </project>

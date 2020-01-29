@@ -25,8 +25,35 @@ class Registration extends CI_Controller {
 		}
 	}
 	function register(){
+		ini_set("display_errors",1);
+		error_reporting(E_ALL);
 		$data = $this->input->post();
-		print_r($data);
+		print_r($_FILES);
+
+		// load codeigniter helpers
+		$this->load->helper(array('form','url'));
+		// set path to store uploaded files
+		$config['upload_path'] = './assets/pdf';
+		// set allowed file types
+		$config['allowed_types'] = 'pdf';
+		// set upload limit, set 0 for no limit
+		$config['max_size']    = 0;
+
+		// load upload library with custom config settings
+		$this->load->library('upload', $config);
+
+		// if upload failed , display errors
+		if (!$this->upload->do_upload('ip'))
+		{
+			print_r($this->upload->display_errors());
+
+		}
+		else
+		{
+			print_r($this->upload->data());
+			// print uploaded file data
+		}
+
 	}
 }
 ?>
