@@ -64,7 +64,8 @@ function nextPrev(n) {
 
         }
 
-    }else if(currentTab==2 && n==1){
+    }
+    else if(currentTab==2 && n==1){
         ms = document.getElementById("ms");
         child = document.getElementById("child");
         height = document.getElementById("height");
@@ -89,7 +90,8 @@ function nextPrev(n) {
             showTab(currentTab);
 
         }
-    } else if(currentTab==3 && n==1){
+    }
+    else if(currentTab==3 && n==1){
 
                 edu = document.getElementById("edu");
                 wp = document.getElementById("wp");
@@ -112,7 +114,8 @@ function nextPrev(n) {
                     showTab(currentTab);
 
                 }
-     }else if(currentTab==4 && n==1){
+     }
+    else if(currentTab==4 && n==1){
 
             gname = document.getElementById("gname");
             gphone = document.getElementById("gphone");
@@ -134,39 +137,13 @@ function nextPrev(n) {
                 showTab(currentTab);
 
             }
-        } else{
-
-        if(currentTab==6 && n==1){
-            Swal.fire(
-                'Done!',
-                'Your Registration is successful!',
-                'success')
-            setTimeout(function(){ if(currentTab==7){
-                window.location = "file:///D:/M/M-R/index.html";
-            } }, 3000);
         }
-
+    else{
         // Hide the current tab:
         x[currentTab].style.display = "none";
         // Increase or decrease the current tab by 1:
         currentTab = currentTab + n;
-
-        // if you have reached the end of the form... :
-        if (currentTab >= x.length) {
-            //...the form gets submitted:
-            Swal.fire(
-                'Done!',
-                'Your Registration is successful!',
-                'success')
-            setTimeout(function(){ if(currentTab==7){
-                window.location = "file:///D:/M/M-R/index.html";
-            } }, 3000);
-
-        }else{
-            showTab(currentTab);
-        }
+        showTab(currentTab);
         // Otherwise, display the correct tab:
     }
-
-
 }

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="839784b0-7ce4-4627-85eb-76a525158616" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Registration.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/registration.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/registration.js" afterDir="false" />
     </list>
@@ -127,7 +128,8 @@
       <workItem from="1580195309642" duration="2605000" />
       <workItem from="1580223687293" duration="1798000" />
       <workItem from="1580228201490" duration="1231000" />
-      <workItem from="1580234928299" duration="809000" />
+      <workItem from="1580234928299" duration="948000" />
+      <workItem from="1580267638161" duration="3939000" />
     </task>
     <task id="LOCAL-00001" summary="dont know">
       <created>1579180458693</created>
@@ -171,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579696803892</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Done validation of all tabs">
+      <created>1580235784860</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1580235784860</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,7 +207,8 @@
     <MESSAGE value="Services page linked and added to navbar&#10;and bradcrum dynamic changing" />
     <MESSAGE value="Contact us page linked and added to navbar" />
     <MESSAGE value="testing first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing first commit" />
+    <MESSAGE value="Done validation of all tabs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Done validation of all tabs" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="23" key="#Notifications" timestamp="1579696261948">
@@ -213,10 +223,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="228" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1580133426694" />
-    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1580225676286">
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1580235782110">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1580225676286" />
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1580235782110" />
     <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1579265264604" />
     <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1579866752932">
       <screen x="0" y="0" width="1366" height="728" />
@@ -233,15 +243,15 @@
     </state>
     <state x="184" y="12" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1579696162167" />
     <state x="184" y="12" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1579264484168" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1580225686941">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1580235789148">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1580225686941" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1580235789148" />
     <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1579265269273" />
-    <state x="359" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1580234987808">
+    <state x="359" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1580267636013">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="359" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1580234987808" />
+    <state x="359" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1580267636013" />
     <state x="359" y="194" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1579261779948" />
   </component>
 </project>

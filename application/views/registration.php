@@ -44,6 +44,7 @@
     <script type="text/javascript">
 
     </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <style>
         .select2-default {
             color: #999 !important;
@@ -74,7 +75,7 @@
                 <div class="card-body">
                     <br><br>
                     <h2 class="title" id="title">Registration</h2>
-                    <form method="POST" id="regForm" action="index.html">
+                    <form method="POST" id="regForm" action="Registration/register">
                        
                                     <div class="tab">
                                    
@@ -104,20 +105,20 @@
                                         <span class="control-indicator"></span>
                                         I Agree Terms & Coditions
                                         </label>
-                                </div>
+                                     </div>
                                     <div class="tab">
                                         
                                         <div class="row row-space">
                                             <div class="col-2">
                                                 <div class="input-group">
-                                                    <input class="input--style-2 js-datepicker" type="text" placeholder="Date of Birth" id="dob" name="Date of Birth">
+                                                    <input class="input--style-2 js-datepicker" type="text" placeholder="Date of Birth" id="dob" name="dob">
                                                     <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                                                 </div>
                                             </div>
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender" id="gender">
+                                                        <select  id="gender" name="gender">
                                                             <option disabled="disabled" selected="selected" value="Gender">Gender <sup>*</sup></option>
                                                             <option value="male">Male</option>
                                                             <option value="female">Female</option>
@@ -156,7 +157,7 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender" id="ns">
+                                                        <select name="nstate" id="ns">
                                                             <option disabled="disabled" selected="selected" value="ns">Native State <sup>*</sup></option>
 															<?php
 															foreach($result as $r){
@@ -171,7 +172,7 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender" id="cs">
+                                                        <select name="cstate" id="cs">
                                                             <option disabled="disabled" selected="selected" value="cs">Residence State <sup>*</sup></option>
 															<?php
 															foreach($result as $r){
@@ -189,7 +190,7 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender" id="nci">
+                                                        <select name="ncity" id="nci">
                                                             <option disabled="disabled" selected="selected" value="nci">Native City <sup>*</sup></option>
 
                                                         </select>
@@ -200,7 +201,7 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender" id="cci">
+                                                        <select name="ccity" id="cci">
                                                             <option disabled="disabled" selected="selected" value="cci">Residence City <sup>*</sup></option>
 
                                                         </select>
@@ -211,14 +212,14 @@
                                           </div>
                                     </div>
                                     <div class="tab">
-                                    
-                                    
+
+
 
                                           <div class="row row-space">
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender" id="ms">
+                                                        <select name="ms" id="ms">
                                                             <option disabled="disabled" selected="selected" value="ms">Marital Status</option>
                                                             <option value="Unmarried">Unmarried</option>
                                                             <option value="Divorced">Divorced</option>
@@ -233,7 +234,7 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender" id="child">
+                                                        <select name="child" id="child">
                                                             <option disabled="disabled" selected="selected" value="child">Children</option>
                                                             <option value="Yes">Yes</option>
                                                             <option value="No">No</option>
@@ -247,7 +248,7 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender" id="height">
+                                                        <select name="height" id="height">
                                                             <option disabled="disabled" selected="selected" value-="0">Height (Feet)</option>
                                                             <option value="1">1</option>
                                                             <option value="2">2</option>
@@ -267,7 +268,7 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender" id="inch">
+                                                        <select name="inch" id="inch">
                                                             <option disabled="disabled" selected="selected" value="none">Inch</option>
                                                             <option value="0">0</option>
                                                             <option value="1">1</option>
@@ -292,7 +293,7 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender" id="btype">
+                                                        <select name="btype" id="btype">
                                                             <option disabled="disabled" selected="selected" value="0">Physique</option>
                                                             <option value="Slim">Slim</option>
                                                           <option value="Athletic">Athletic</option>
@@ -308,7 +309,7 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender" id="htype">
+                                                        <select name="health" id="htype">
                                                             <option disabled="disabled" selected="selected" value="0">Health</option>
                                                             <option value="Healthy">Healthy</option>
                                                           <option value="Physically challenged">Physically challenged</option>
@@ -324,7 +325,7 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender" id="wol">
+                                                        <select name="wol" id="wol">
                                                             <option disabled="disabled" selected="selected" value="0">Way of Living</option>
                                                             <option value="">Any</option>
                                                           <option value="Simple">Simple</option>
@@ -339,7 +340,7 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender" id="ft">
+                                                        <select name="ft" id="ft">
                                                             <option disabled="disabled" selected="selected" value="0">Family/Tribe </option>
                                                             <option value="Ansari">Ansari</option>
                                                              <option value="Baig">Baig</option>
@@ -360,7 +361,7 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender" id="rp">
+                                                        <select name="rp" id="rp">
                                                             <option disabled="disabled" selected="selected" value="0">Religious Practice</option>
                                                               <option value="Salah">Salah</option>
                                                                <option value="Soum">Soum</option>
@@ -376,7 +377,7 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender" id="fiqhs">
+                                                        <select name="fiqhs" id="fiqhs">
                                                             <option disabled="disabled" selected="selected" value="0">Fiqh/School of Thought  </option>
                                                             <option value="Hanafi">Hanafi</option>
                                                             <option value="Shafai">Shafai</option>
@@ -392,7 +393,7 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender" id="wywm">
+                                                        <select name="wywm" id="wywm">
                                                             <option disabled="disabled" selected="selected" value="0">When you want to Marry </option>
                                                                 <option value="As soon as possible">As soon as possible </option>
                                              <option value="Within 1-2 months">Within 1-2 months</option>
@@ -407,7 +408,7 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender" id="nationality">
+                                                        <select name="nationality" id="nationality">
                                                             <option disabled="disabled" selected="selected" value="0">Nationality</option>
                                                              <option value="Australian">Australian</option>
                                                            <option value="Bahraini">Bahraini</option>
@@ -453,7 +454,7 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender" id="edu">
+                                                        <select name="edu" id="edu">
                                                             <option disabled="disabled" value="0" selected="selected">Education</option>
                                                             <option value="Graduate">Graduate</option>
                                                              <option value="B.Tech">B.Tech</option>
@@ -479,9 +480,9 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender" id="wp">
+                                                        <select name="wp" id="wp">
                                                             <option disabled="disabled" value="0" selected="selected">Work Profession </option>
-                                                            
+
                                                   <option value="Architect">Architect</option>
                                                   <option value="Engineer">Engineer</option>
                                                   <option value="Doctor">Doctor</option>
@@ -521,7 +522,7 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender" id="nl">
+                                                        <select name="nl" id="nl">
                                                             <option value="0" disabled="disabled" selected="selected">Native Language </option>
                                                              <option value="Arabic">Arabic</option>
                                                               <option value="Bengali">Bengali</option>
@@ -552,7 +553,7 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple ">
-                                                        <select name="gender" id="lk" multiple="multiple">
+                                                        <select name="lk[]" id="lk" multiple="multiple">
 
                                                              <option value="Arabic">Arabic</option>
                                                               <option value="Bengali">Bengali</option>
@@ -586,7 +587,7 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender" id="ec">
+                                                        <select name="ec" id="ec">
                                                             <option disabled="disabled" value="0" selected="selected">Earning currency </option>
                                                              <option value="Australia Dollar">Australia Dollar</option>
                                               <option value="Bahrain Dinar">Bahrain Dinar</option>
@@ -622,14 +623,14 @@
                                             </div>
                                             <div class="col-2">
                                                  <div class="input-group">
-                                            <input class="input--style-2" type="tel" placeholder="Monthly Salary " name="res_code" id="msa">
+                                            <input class="input--style-2" type="tel" placeholder="Monthly Salary " name="msa" id="msa">
                                         </div>
                                             </div>
                                           </div>
 
-                                           
+
                                     </div>
-                                <div class="tab">
+                                    <div class="tab">
                                     <div class="row row-space">
                                             <div class="col-2">
                                                  <div class="input-group">
@@ -644,48 +645,48 @@
                                     </div>
                                     <div class="row row-space">
                                             <div class="col-2">
-                            
+
                                                     <label class="file">
                                                     <input type="file" id="profilephoto" aria-label="File browser example">
                                                     <span class="file-custom">Profile Photo</span>
                                                     </label>
-                                                 
+
                                             </div>
                                              <div class="col-2">
-                            
+
                                                     <label class="file">
                                                     <input type="file" id="idproof" aria-label="File browser example">
                                                     <span class="file-custom">ID Proof</span>
                                                     </label>
-                                                 
+
                                             </div>
                                     </div>
                                            <div class="row row-space">
                                             <div class="col-2">
-                            
+
                                                     <label class="file">
                                                     <input type="file" id="biodata" aria-label="File browser example">
                                                     <span class="file-custom">Bio Data</span>
                                                     </label>
-                                                 
+
                                             </div>
                                              <div class="col-2">
-                            
+
                                                     <div class="input-group">
                                                          <input class="input--style-2" type="tel" placeholder="Facebook ID " name="res_code">
                                                  </div>
-                                                 
+
                                             </div>
                                     </div>
                                 </div>
-                                <div class="tab">
+                                    <div class="tab">
                                               <div class="row row-space">
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender">
+                                                        <select name="a">
                                                             <option disabled="disabled" selected="selected">Minimum Height (Feet)</option>
-                                                           
+
                                                         </select>
                                                         <div class="select-dropdown"></div>
                                                     </div>
@@ -694,9 +695,9 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender">
+                                                        <select name="a">
                                                             <option disabled="disabled" selected="selected">Inch</option>
-                                                          
+
                                                         </select>
                                                         <div class="select-dropdown"></div>
                                                     </div>
@@ -707,9 +708,9 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender">
+                                                        <select name="a">
                                                             <option disabled="disabled" selected="selected">Maximum Height (Feet)</option>
-                                                            
+
                                                         </select>
                                                         <div class="select-dropdown"></div>
                                                     </div>
@@ -718,9 +719,9 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender">
+                                                        <select name="a">
                                                             <option disabled="disabled" selected="selected">Inch</option>
-                                                        
+
                                                         </select>
                                                         <div class="select-dropdown"></div>
                                                     </div>
@@ -731,7 +732,7 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender">
+                                                        <select name="a">
                                                             <option disabled="disabled" selected="selected">Minimum Age</option>
                                                            <option value="18">18</option>
                                                              <option value="19">19</option>
@@ -794,7 +795,7 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender">
+                                                        <select name="a">
                                                             <option disabled="disabled" selected="selected">Maximum Age</option>
                                                             <option value="18">18</option>
                                                              <option value="19">19</option>
@@ -859,7 +860,7 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender">
+                                                        <select name="a">
                                                             <option disabled="disabled" selected="selected">Education</option>
                                                           <option value="Primary school">Primary school</option>
                                   <option value="Secondary school">Secondary school</option>
@@ -889,7 +890,7 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender">
+                                                        <select name="a">
                                                             <option disabled="disabled" selected="selected">Work Profession </option>
                                                             <option value="Architect">Architect</option>
                                                           <option value="Engineer">Engineer</option>
@@ -930,7 +931,7 @@
                                             <div class="col-3">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender">
+                                                        <select name="a">
                                                             <option disabled="disabled" selected="selected">Earning currency </option>
                                                            <option value="Australia Dollar">Australia Dollar</option>
                                                   <option value="Bahrain Dinar">Bahrain Dinar</option>
@@ -964,27 +965,27 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                                    
+
                                              <div class="col-3">
                                                 <div class="input-group">
                                                     <input class="input--style-2 " type="text" placeholder="Minimum  Salary" name="Date of Birth">
-                                                    
+
                                                 </div>
                                             </div>
                                               <div class="col-3">
                                                 <div class="input-group">
                                                     <input class="input--style-2 " type="text" placeholder="Maximum  Salary" name="Date of Birth">
-                                                    
+
                                                 </div>
                                             </div>
                                           </div>
                                  </div>
-                                 <div class="tab">
+                                    <div class="tab">
                                       <div class="row row-space">
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender">
+                                                        <select name="a">
                                                             <option disabled="disabled" selected="selected">Native Country </option>
                                                            <option value="3">Australia</option>
                                                           <option value="4">Bahrain</option>
@@ -1026,7 +1027,7 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender">
+                                                        <select name="a">
                                                             <option disabled="disabled" selected="selected">Residence Country </option>
                                                             <option value="3">Australia</option>
                                                           <option value="4">Bahrain</option>
@@ -1070,9 +1071,9 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender">
+                                                        <select name="a">
                                                             <option disabled="disabled" selected="selected">Native State</option>
-                                                            
+
                                                         </select>
                                                         <div class="select-dropdown"></div>
                                                     </div>
@@ -1081,9 +1082,9 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender">
+                                                        <select name="a">
                                                             <option disabled="disabled" selected="selected">Residence State</option>
-                                                            
+
                                                         </select>
                                                         <div class="select-dropdown"></div>
                                                     </div>
@@ -1095,9 +1096,9 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender">
+                                                        <select name="a">
                                                             <option disabled="disabled" selected="selected">Native City</option>
-                                                           
+
                                                         </select>
                                                         <div class="select-dropdown"></div>
                                                     </div>
@@ -1106,21 +1107,21 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender">
+                                                        <select name="a">
                                                             <option disabled="disabled" selected="selected">Residence City</option>
-                                                            
+
                                                         </select>
                                                         <div class="select-dropdown"></div>
                                                     </div>
                                                 </div>
                                             </div>
                                           </div>
-                                          
+
                                            <div class="row row-space">
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender">
+                                                        <select name="a">
                                                             <option disabled="disabled" selected="selected">Physique</option>
                                                             <option value="Slim">Slim</option>
                                                           <option value="Athletic">Athletic</option>
@@ -1136,7 +1137,7 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender">
+                                                        <select name="a">
                                                             <option disabled="disabled" selected="selected">Health</option>
                                                             <option value="Healthy">Healthy</option>
                                                           <option value="Physically challenged">Physically challenged</option>
@@ -1152,7 +1153,7 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender">
+                                                        <select name="a">
                                                             <option disabled="disabled" selected="selected">Way of Living</option>
                                                             <option value="">Any</option>
                                                           <option value="Simple">Simple</option>
@@ -1167,7 +1168,7 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender">
+                                                        <select name="a">
                                                             <option disabled="disabled" selected="selected">Family/Tribe </option>
                                                             <option value="Ansari">Ansari</option>
                                                              <option value="Baig">Baig</option>
@@ -1188,7 +1189,7 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender">
+                                                        <select name="a">
                                                             <option disabled="disabled" selected="selected">Religious Practice</option>
                                                               <option value="Salah">Salah</option>
                                                                <option value="Soum">Soum</option>
@@ -1204,7 +1205,7 @@
                                             <div class="col-2">
                                                 <div class="input-group">
                                                     <div class="rs-select2 js-select-simple select--no-search">
-                                                        <select name="gender">
+                                                        <select name="a">
                                                             <option disabled="disabled" selected="selected">Fiqh/School of Thought  </option>
                                                             <option value="Hanafi">Hanafi</option>
                                                             <option value="Shafai">Shafai</option>
@@ -1222,22 +1223,8 @@
                       
                             <div class="pt-30" style="float:right;">
                                 <button class="btn btn--radius btn--green" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-                            <button class="btn btn--radius btn--green" type="button" id="nextBtn" onclick="nextPrev(1)" hidden>Next</button> 
-                           <!--    <button class=" learn-more" type="button" id="pbtn" onclick="nextPrev(-1)"style="float:left; display: none;" hidden>
-                                <span class="circle">
-                                <span class="icon arrowb"></span>
-                                </span>
-                                <span class="button-text">Previous</span>
-                            </button>
-                            <button class="buttonn learn-more" type="button" id="nextBtn" onclick="nextPrev(1)" style="float:right;">
-                                <span class="circle">
-                                <span class="icon arrow"></span>
-                                </span>
-                                <span class="button-text">Next</span>
-                            </button> -->
-
-                        
-                    </div>
+                                <button class="btn btn--radius btn--green" type="button" id="nextBtn" onclick="nextPrev(1)" hidden>Next</button>
+                             </div>
                     </form>
                 </div>
             </div>
@@ -1294,10 +1281,15 @@ function showTab(n) {
     document.getElementById("prevBtn").style.display = "inline";
   }
   if (n == (x.length - 1)) {
-    document.getElementById("nextBtn").innerHTML = "Submit";
+    var sbt = document.getElementById("nextBtn").innerHTML = "Submit";
+    //document.getElementById("nextBtn").setAttribute('type', 'submit');
+
   } else {
     document.getElementById("nextBtn").innerHTML = "Next";
   }
+    if(sbt == "Submit"){
+        document.getElementById("nextBtn").setAttribute('type', 'submit');
+    }
   // ... and run a function that displays the correct step indicator:
 
 }
