@@ -25,7 +25,7 @@
                     <a class="dropdown-item" href="\light/profile.php"><i class="dripicons-user text-muted mr-2"></i> Profile</a>
                     <a class="dropdown-item" href="\light/lock-screen.php"><i class="dripicons-lock text-muted mr-2"></i> Lock screen</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="\light/login.php"><i class="dripicons-exit text-muted mr-2"></i> Logout</a>
+                    <a class="dropdown-item" href="<?php echo base_url();?>Admin_login/logout"><i class="dripicons-exit text-muted mr-2"></i> Logout</a>
                 </div>
             </li>
         </ul><!--end topbar-nav-->

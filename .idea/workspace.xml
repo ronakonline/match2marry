@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="839784b0-7ce4-4627-85eb-76a525158616" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/pdf/Requirements.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/autoload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Registration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/registration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/registration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Admin_login.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Admin_login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/sidenav.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/sidenav.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/topnav.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/topnav.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +132,9 @@
       <workItem from="1580234928299" duration="948000" />
       <workItem from="1580267638161" duration="3939000" />
       <workItem from="1580308509312" duration="2528000" />
-      <workItem from="1580312745362" duration="2033000" />
+      <workItem from="1580312745362" duration="2070000" />
+      <workItem from="1580538146652" duration="19000" />
+      <workItem from="1580540812000" duration="1429000" />
     </task>
     <task id="LOCAL-00001" summary="dont know">
       <created>1579180458693</created>
@@ -184,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580235784860</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Done File Uplodation and all fields name are changed">
+      <created>1580314814413</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1580314814413</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +220,8 @@
     <MESSAGE value="Contact us page linked and added to navbar" />
     <MESSAGE value="testing first commit" />
     <MESSAGE value="Done validation of all tabs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Done validation of all tabs" />
+    <MESSAGE value="Done File Uplodation and all fields name are changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Done File Uplodation and all fields name are changed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="23" key="#Notifications" timestamp="1579696261948">
@@ -227,10 +236,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="228" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1580133426694" />
-    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1580271635825">
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1580314812602">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1580271635825" />
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1580314812602" />
     <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1579265264604" />
     <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1579866752932">
       <screen x="0" y="0" width="1366" height="728" />
@@ -247,15 +256,15 @@
     </state>
     <state x="184" y="12" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1579696162167" />
     <state x="184" y="12" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1579264484168" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1580271646040">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1580314840853">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1580271646040" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1580314840853" />
     <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1579265269273" />
-    <state x="359" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1580313005561">
+    <state x="359" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1580538145840">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="359" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1580313005561" />
+    <state x="359" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1580538145840" />
     <state x="359" y="194" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1579261779948" />
     <state x="391" y="156" key="git4idea.merge.GitPullDialog" timestamp="1580310627857">
       <screen x="0" y="0" width="1366" height="728" />

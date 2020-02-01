@@ -20,6 +20,11 @@ class Admin_login extends CI_Controller{
            echo $result;
        }
     }
+    public function logout(){
+        session_destroy();
+        redirect(base_url().'Admin_login');
+
+    }
     public function Recover(){
         $this->load->view('admin/recover-pw');
     }
