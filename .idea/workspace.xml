@@ -2,11 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="839784b0-7ce4-4627-85eb-76a525158616" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/application/controllers/Admin_Users.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/models/admin_users_m.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/pdf/ACCA_Website_Redesign_RFP_-_Amendment_1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/pdf/ACCA_Website_Redesign_RFP_-_Amendment_11.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/pdf/ACCA_Website_Redesign_RFP_-_Amendment_12.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/pdf/Requirements1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/pdf/Requirements2.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/pdf/Soteka_Model.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/pdf/Soteka_Model1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/pdf/Soteka_Model2.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Admin_login.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Admin_login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/registration_m.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/registration_m.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/analytics-customers.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/users.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/admin/sidenav.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/sidenav.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/admin/topnav.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/topnav.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/registration.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +146,8 @@
       <workItem from="1580308509312" duration="2528000" />
       <workItem from="1580312745362" duration="2070000" />
       <workItem from="1580538146652" duration="19000" />
-      <workItem from="1580540812000" duration="1429000" />
+      <workItem from="1580540812000" duration="2076000" />
+      <workItem from="1580799854807" duration="7339000" />
     </task>
     <task id="LOCAL-00001" summary="dont know">
       <created>1579180458693</created>
@@ -192,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580314814413</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Logout completed">
+      <created>1580542282151</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1580542282151</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,7 +241,8 @@
     <MESSAGE value="testing first commit" />
     <MESSAGE value="Done validation of all tabs" />
     <MESSAGE value="Done File Uplodation and all fields name are changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Done File Uplodation and all fields name are changed" />
+    <MESSAGE value="Logout completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Logout completed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="23" key="#Notifications" timestamp="1579696261948">
@@ -236,35 +257,35 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="228" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1580133426694" />
-    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1580314812602">
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1580542279041">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1580314812602" />
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1580542279041" />
     <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1579265264604" />
     <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1579866752932">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1579866752932" />
     <state x="463" y="125" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1579265569072" />
-    <state x="517" y="285" key="NewPhpFileDialog" timestamp="1580133153338">
+    <state x="517" y="285" key="NewPhpFileDialog" timestamp="1580824881704">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="285" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1580133153338" />
+    <state x="517" y="285" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1580824881704" />
     <state x="517" y="289" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1579265776157" />
     <state x="184" y="12" key="SettingsEditor" timestamp="1579696162167">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="12" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1579696162167" />
     <state x="184" y="12" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1579264484168" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1580314840853">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1580542285232">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1580314840853" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1580542285232" />
     <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1579265269273" />
-    <state x="359" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1580538145840">
+    <state x="269" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1580799921709">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="359" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1580538145840" />
+    <state x="269" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1580799921709" />
     <state x="359" y="194" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1579261779948" />
     <state x="391" y="156" key="git4idea.merge.GitPullDialog" timestamp="1580310627857">
       <screen x="0" y="0" width="1366" height="728" />

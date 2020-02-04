@@ -674,7 +674,7 @@
                                              <div class="col-2">
 
                                                     <div class="input-group">
-                                                         <input class="input--style-2" name="fbid" type="tel" placeholder="Facebook ID " >
+                                                         <input class="input--style-2" name="facebook" type="tel" placeholder="Facebook ID " >
                                                  </div>
 
                                             </div>

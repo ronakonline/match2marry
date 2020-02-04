@@ -25,10 +25,9 @@ class Registration extends CI_Controller {
 		}
 	}
 	function register(){
-		ini_set("display_errors",1);
-		error_reporting(E_ALL);
+
 		$data = $this->input->post();
-		print_r($_FILES);
+
 
 		// load codeigniter helpers
 		$this->load->helper(array('form','url'));
@@ -48,12 +47,22 @@ class Registration extends CI_Controller {
 			print_r($this->upload->display_errors());
 
 		}
-		else
+		$data['ip'] = $this->upload->data('file_name');
+		if (!$this->upload->do_upload('profilephoto'))
 		{
-			print_r($this->upload->data());
-			// print uploaded file data
-		}
+			print_r($this->upload->display_errors());
 
+		}
+		$data['profilephoto'] = $this->upload->data('file_name');
+		if (!$this->upload->do_upload('biodata'))
+		{
+			print_r($this->upload->display_errors());
+
+		}
+		$data['biodata'] = $this->upload->data('file_name');
+
+		$this->load->model('registration_m');
+		$this->registration_m->register($data);
 	}
 }
 ?>

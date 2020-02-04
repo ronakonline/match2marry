@@ -26,7 +26,7 @@
                 </div>
                 <ul class="nav">
                     <li class="nav-item"><a class="nav-link active" href="<?php echo base_url(); ?>Admin"><i class="dripicons-meter"></i>Dashboard</a></li>
-                    <li class="nav-item"><a class="nav-link " href="\light/analytics/analytics-customers.php"><i class="dripicons-user-group"></i>Customers</a></li>
+                    <li class="nav-item"><a class="nav-link " href="<?php echo base_url(); ?>Admin_Users"><i class="dripicons-user-group"></i>Customers</a></li>
                     <li class="nav-item"><a class="nav-link" href="\light/analytics/analytics-vendors.php"><i class="dripicons-user-group"></i>Vendors</a></li>
                     <li class="nav-item"><a class="nav-link" href="\light/analytics/analytics-reports.php"><i class="dripicons-document"></i>Reports</a></li> 
                 </ul>
