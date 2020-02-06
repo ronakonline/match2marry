@@ -33,7 +33,7 @@
                                                 <th>Email</th>
                                                 <th>Gender</th>
                                                 <th>Country</th>
-                                                <th>Action</th>
+                                                <th>View</th>
                                             </tr><!--end tr-->
                                             </thead>
         
@@ -46,9 +46,8 @@
                                                 <td><?php echo $row->email; ?></td>
                                                 <td><?php echo $row->gender; ?></td>
                                                 <td>United States</td>
-                                                <td>                                                       
-                                                    <a href="#" class="mr-2"><i class="fas fa-edit text-info font-16"></i></a>
-                                                    <a href="#"><i class="fas fa-trash-alt text-danger font-16"></i></a>
+                                                <td>  
+                                                    <a href="Admin_Usersprofile"><button class="btn btn-primary">Profile</button></a>
                                                 </td>
                                             </tr><!--end tr-->
                                                     <?php } ?>
