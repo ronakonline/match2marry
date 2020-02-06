@@ -12,5 +12,13 @@ class admin_users_m extends CI_Model {
         return $result;
     }
 
+    public function getuserprofile($id){
+        $this->load->database();
+        $q = $this->db->query('select * from users where id= '.$id);
+
+        $result = $q->result();
+        return $result;
+    }
+
 
 }

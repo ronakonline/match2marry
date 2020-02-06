@@ -3,6 +3,7 @@
 <?php $this->load->view('admin/sidenav'); ?>
 
 
+
 <!-- Page Content-->
             <div class="page-content">
 
@@ -47,7 +48,7 @@
                                                 <td><?php echo $row->gender; ?></td>
                                                 <td>United States</td>
                                                 <td>  
-                                                    <a href="Admin_Usersprofile"><button class="btn btn-primary">Profile</button></a>
+                                                    <a href="<?php echo base_url();?>Admin_Users/profile/<?php echo $row->id; ?>"><button class="btn btn-primary">Profile</button></a>
                                                 </td>
                                             </tr><!--end tr-->
                                                     <?php } ?>

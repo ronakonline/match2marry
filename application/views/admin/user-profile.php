@@ -1,6 +1,7 @@
 <?php $this->load->view('admin/header'); ?>
 <?php $this->load->view('admin/topnav'); ?>
 <?php $this->load->view('admin/sidenav'); ?>
+<?php foreach ($mydata as $row){} ?>
             <!-- Page Content-->
             <div class="page-content">
 
@@ -30,15 +31,15 @@
                                                         </span>
                                                     </div>
                                                     <div class="met-profile_user-detail">
-                                                        <h5 class="met-user-name">Full Name</h5>       
-                                                        <p class="mb-0 met-user-name-post">Gender - Male</p>
+                                                        <h5 class="met-user-name"><?php echo $row->name; ?></h5>
+                                                        <p class="mb-0 met-user-name-post"><?php echo $row->gender; ?> - <?php echo $row->dob; ?></p>
                                                     </div>
                                                 </div>                                                
                                             </div><!--end col-->
                                             <div class="col-lg-4 ml-auto">
                                                 <ul class="list-unstyled personal-detail">
                                                     <li class=""><i class="dripicons-phone mr-2 text-info font-18"></i> <b> phone </b> : +91 23456 78910</li>
-                                                    <li class="mt-2"><i class="dripicons-mail text-info font-18 mt-2 mr-2"></i> <b> Email </b> : mannat.theme@gmail.com</li>
+                                                    <li class="mt-2"><i class="dripicons-mail text-info font-18 mt-2 mr-2"></i> <b> Email </b> : <?php echo $row->email; ?></li>
                                                 </ul>
                                                 <div class="button-list btn-social-icon">                                                
                                                     <button type="button" class="btn btn-blue btn-round">
