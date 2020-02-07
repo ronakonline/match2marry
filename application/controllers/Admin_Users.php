@@ -13,6 +13,10 @@ class Admin_Users extends CI_Controller{
             redirect(base_url().'Admin_login');
         }
     }
+    public function profile($id){
+        $_SESSION['id'] = $id;
+        redirect(base_url()."Admin_Usersprofile");
+    }
 
 
 }
