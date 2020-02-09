@@ -2,7 +2,7 @@
 
 class admin_employees_m extends CI_Model {
 
-    public function getusers(){
+    public function getemp(){
         $this->load->database();
 
         $q = $this->db->query('select * from users');
