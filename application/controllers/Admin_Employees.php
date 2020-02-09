@@ -7,7 +7,7 @@ class Admin_Employees extends CI_Controller{
 
         if(isset($_SESSION['user'])){
             $this->load->model('admin_employees_m');
-            $data = $this->admin_employees_m->getemp();
+            $data = $this->admin_employees_m->getusers();
             $this->load->view('admin/employees',array('my_data'=>$data));
         }else{
             redirect(base_url().'Admin_login');
