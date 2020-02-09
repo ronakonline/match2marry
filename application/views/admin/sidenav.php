@@ -51,6 +51,7 @@
                 <ul class="nav">
                     <li class="nav-item"><a class="nav-link active" href="<?php echo base_url(); ?>Admin_Users"><i class="dripicons-user"></i>Users</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><i class="dripicons-user-id"></i>Vendors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?php echo base_url(); ?>Admin_Employees"><i class="dripicons-user-id"></i>Employees</a></li>
                 </ul>
             </div><!-- end ManageUsers -->
 
@@ -73,7 +74,7 @@
                     <li class="nav-item"><a class="nav-link" href="#"><i class="dripicons-code"></i>Footer</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><i class="dripicons-code"></i>Header</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><i class="dripicons-photo"></i>Logo</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="dripicons-phone"></i>Contact Information</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?php echo base_url(); ?>Admin_Contact"><i class="dripicons-phone"></i>Contact Information</a></li>
                 </ul>
             </div><!-- end SiteSettings -->
 
