@@ -11,6 +11,9 @@
 <script src="<?php echo base_url(); ?>assets/admin/plugins/apexcharts/apexcharts.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/admin/pages/jquery.analytics_dashboard.init.js"></script>
 
+<script src="<?php echo base_url(); ?>assets/admin/plugins/dropify/js/dropify.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/admin/pages/jquery.form-upload.init.js"></script>
+
 
 <!-- App js -->
 <script src="<?php echo base_url(); ?>assets/admin/js/app.js"></script>

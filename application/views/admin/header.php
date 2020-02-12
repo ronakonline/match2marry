@@ -20,6 +20,7 @@
         <link href="<?php echo base_url(); ?>assets/admin/plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" /> 
         <link href="<?php echo base_url(); ?>assets/admin/plugins/jvectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet">
  
+        
 
         <!-- App css -->
         <link href="<?php echo base_url(); ?>assets/admin/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -27,6 +28,7 @@
         <link href="<?php echo base_url(); ?>assets/admin/css/metisMenu.min.css" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url(); ?>assets/admin/css/style.css" rel="stylesheet" type="text/css" />
 
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body>
