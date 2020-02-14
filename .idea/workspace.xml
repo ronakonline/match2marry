@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="839784b0-7ce4-4627-85eb-76a525158616" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/application/controllers/Admin_Contact.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/controllers/Admin_Employees.php" afterDir="false" />
+    <list default="true" id="839784b0-7ce4-4627-85eb-76a525158616" name="Default Changelist" comment="comment deleted">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Admin_Contact" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Admin_Employees" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/employees.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/employees.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,7 +249,8 @@
     <MESSAGE value="Logout completed" />
     <MESSAGE value="User registration is completed and admin panel user list has been done with the models and database table" />
     <MESSAGE value="Database added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Database added" />
+    <MESSAGE value="comment deleted" />
+    <option name="LAST_COMMIT_MESSAGE" value="comment deleted" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="23" key="#Notifications" timestamp="1579696261948">
@@ -267,10 +265,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="228" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1580133426694" />
-    <state x="306" y="0" width="749" height="495" key="CommitChangelistDialog2" timestamp="1580991992760">
+    <state x="306" y="0" width="749" height="495" key="CommitChangelistDialog2" timestamp="1581690910922">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="306" y="0" width="749" height="495" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1580991992760" />
+    <state x="306" y="0" width="749" height="495" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1581690910922" />
     <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1579265264604" />
     <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1581101056255">
       <screen x="0" y="0" width="1366" height="728" />
@@ -297,9 +295,9 @@
     </state>
     <state x="269" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1581079384330" />
     <state x="359" y="194" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1579261779948" />
-    <state x="391" y="156" key="git4idea.merge.GitPullDialog" timestamp="1581223415529">
+    <state x="391" y="156" key="git4idea.merge.GitPullDialog" timestamp="1581690928536">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="156" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1581223415529" />
+    <state x="391" y="156" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1581690928536" />
   </component>
 </project>
