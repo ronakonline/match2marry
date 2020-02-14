@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 06, 2020 at 08:14 AM
+-- Generation Time: Feb 14, 2020 at 03:39 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.26
 
@@ -44,7 +44,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `username`, `email`, `Name`, `password`, `user_type`, `created_at`, `updated_at`) VALUES
-(1, 'Ronak', 'admin@admin.com', 'Ronak', '3e7bf1383bcdd338f3d837f3dc948f80', 1, '2020-01-27 18:49:17', '2020-01-27 18:49:17');
+(1, 'Ronak', 'admin@admin.com', 'Ronak', '3e7bf1383bcdd338f3d837f3dc948f80', 2, '2020-01-27 18:49:17', '2020-01-27 18:49:17');
 
 -- --------------------------------------------------------
 
@@ -34080,6 +34080,48 @@ INSERT INTO `counties` (`id`, `state_id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `live_users`
+--
+
+CREATE TABLE `live_users` (
+  `id` int(11) NOT NULL,
+  `ip` mediumtext NOT NULL,
+  `location` mediumtext NOT NULL,
+  `last_activity` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `live_users`
+--
+
+INSERT INTO `live_users` (`id`, `ip`, `location`, `last_activity`) VALUES
+(1, '::1', '', '2020-02-13 13:49:48'),
+(2, '::1', '', '2020-02-13 13:50:06'),
+(3, '::1', '', '2020-02-14 14:39:03');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `site_setting`
+--
+
+CREATE TABLE `site_setting` (
+  `email` mediumtext NOT NULL,
+  `telephone` mediumtext NOT NULL,
+  `address` longtext NOT NULL,
+  `logo` mediumtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `site_setting`
+--
+
+INSERT INTO `site_setting` (`email`, `telephone`, `address`, `logo`) VALUES
+('admin@admin.com', '9265074781', 'sagsavsavsavxzvz', '');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `states`
 --
 
@@ -34196,7 +34238,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `dob`, `gender`, `ncountry`, `nstate`, `ncity`, `ccountry`, `cstate`, `ccity`, `ms`, `children`, `height`, `inch`, `physique`, `health`, `wayofliving`, `tribe`, `religiouspractice`, `fiqh`, `wywm`, `nationality`, `education`, `wp`, `nativelanguage`, `languageknown`, `earningcurrency`, `monthlysalary`, `guardianname`, `gphone`, `idproof`, `profilephoto`, `biodata`, `facebook`) VALUES
-(13, 'Ronak', 'ronak@gmail.com', '202cb962ac59075b964b07152d234b70', '0000-00-00', 'male', '1', '4', '1501', '1', '3', '1018', 'Unmarried', 'No', 5, 7, 'Athletic', 'Healthy', '', 'Ansari', 'Soum', 'Hanafi', 'Within 3-4 months', 'Bangladeshi', 'B.Tech', 'Engineer', 'Bengali', 'English,Gujrati,Hindi', 'Bangladesh Taka', 123, 'Ronak', 654313, 'Requirements2.pdf', 'ACCA_Website_Redesign_RFP_-_Amendment_12.pdf', 'Soteka_Model2.pdf', '');
+(13, 'Ronak', 'ronak@gmail.com', '202cb962ac59075b964b07152d234b70', '0000-00-00', 'male', '1', '4', '1501', '1', '3', '1018', 'Unmarried', 'No', 5, 7, 'Athletic', 'Healthy', '', 'Ansari', 'Soum', 'Hanafi', 'Within 3-4 months', 'Bangladeshi', 'B.Tech', 'Engineer', 'Bengali', 'English,Gujrati,Hindi', 'Bangladesh Taka', 123, 'Ronak', 654313, 'Requirements2.pdf', 'ACCA_Website_Redesign_RFP_-_Amendment_12.pdf', 'Soteka_Model2.pdf', ''),
+(14, 'Ronak', 'admiN@admin.com', '202cb962ac59075b964b07152d234b70', '0000-00-00', 'male', '1', '2', '602', '1', '4', '1501', 'Unmarried', 'No', 3, 2, 'Build Muscular', 'Minor health issue', 'Simple', 'Ghori', 'Hajj', 'Maliki', 'Within 5-6 months', 'Canadian', 'Post graduate', 'Engineer', 'English', 'English,Gujrati,Hindi', 'Bangladesh Taka', 213, 'Ronak', 23435431, 'Website_Proposal.pdf', 'Website_Proposal1.pdf', 'Website_Proposal2.pdf', 'sbsbsdbsdbs');
 
 -- --------------------------------------------------------
 
@@ -77340,6 +77383,12 @@ ALTER TABLE `counties`
   ADD KEY `index_counties_on_state_id` (`state_id`);
 
 --
+-- Indexes for table `live_users`
+--
+ALTER TABLE `live_users`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `states`
 --
 ALTER TABLE `states`
@@ -77380,6 +77429,12 @@ ALTER TABLE `counties`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3143;
 
 --
+-- AUTO_INCREMENT for table `live_users`
+--
+ALTER TABLE `live_users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
 -- AUTO_INCREMENT for table `states`
 --
 ALTER TABLE `states`
@@ -77389,7 +77444,7 @@ ALTER TABLE `states`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `zipcodes`
