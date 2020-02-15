@@ -41,6 +41,7 @@
       <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/intl-tel-input-master/build/css/intlTelInput.css">
       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script type="text/javascript" src="<?php echo base_url();?>/assets/js/registration.js"></script>
+    <script src="https://use.fontawesome.com/a263f9d95a.js"></script>
     <script type="text/javascript">
 
     </script>
@@ -644,34 +645,43 @@
                                                  </div>
                                             </div>
                                     </div>
-                                    <div class="row row-space">
-                                            <div class="col-2">
 
-                                                    <label class="file">
-                                                    <input type="file" name="profilephoto" id="profilephoto" aria-label="File browser example">
+
+                                    <div class="row row-space" >
+
+                                            <div class="col-2" style="display: inline-block">
+
+                                                    <label class="file" >
+                                                        <input type="file" name="profilephoto" id="profilephoto" aria-label="File browser example" onchange="fileCheck(this);">
                                                     <span class="file-custom">Profile Photo</span>
                                                     </label>
 
                                             </div>
+                                        <div class="col-1" style="display: inline-block"> <i class="fa fa-times" aria-hidden="true" style="padding-top: 10px; color:green" ></i></div>
+                                        <div class="col-1" style="display: inline-block"> <i class="fa fa-check" aria-hidden="true" style="padding-top: 10px; color:green" ></i></div>
                                              <div class="col-2">
 
                                                     <label class="file">
-                                                    <input type="file" name="ip" id="idproof" aria-label="File browser example">
+                                                    <input type="file" name="ip" id="idproof" aria-label="File browser example" onchange="idproofcheck(this);">
                                                     <span class="file-custom">ID Proof</span>
                                                     </label>
 
                                             </div>
+
+
                                     </div>
                                            <div class="row row-space">
                                             <div class="col-2">
 
                                                     <label class="file">
-                                                    <input type="file" name="biodata" id="biodata" aria-label="File browser example">
+                                                    <input type="file" name="biodata" id="biodata" aria-label="File browser example" onchange="biodatacheck(this);">
                                                     <span class="file-custom">Bio Data</span>
                                                     </label>
 
                                             </div>
-                                             <div class="col-2">
+                                               <div class="col-1" style="display: inline-block"> <i class="fa fa-check" aria-hidden="true" style="padding-top: 10px; color:green" ></i></div>
+
+                                               <div class="col-2">
 
                                                     <div class="input-group">
                                                          <input class="input--style-2" name="facebook" type="tel" placeholder="Facebook ID " >
