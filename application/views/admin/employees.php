@@ -13,7 +13,7 @@
                         <div class="col-sm-12">
                             <div class="page-title-box">
                                 
-                                <h4 class="page-title">Users</h4>
+                                <h4 class="page-title">Employees</h4>
                             </div><!--end page-title-box-->
                         </div><!--end col-->
                     </div>
@@ -23,18 +23,18 @@
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <a href="<?php echo base_url();?>Matrimonial"><button class="btn btn-primary px-4 float-right mt-0 mb-3"><i class="mdi mdi-plus-circle-outline mr-2"></i>Add New Customer</button></a>
-                                    <h4 class="header-title mt-0">Users Details</h4>
+                                    <a href="<?php echo base_url();?>Admin_Employees/emp_form"><button class="btn btn-primary px-4 float-right mt-0 mb-3"><i class="mdi mdi-plus-circle-outline mr-2"></i>Add New Employee</button></a>
+                                    <h4 class="header-title mt-0">Employees Details</h4>
 
                                     <div class="table-responsive dash-social">
                                         <table id="datatable" class="table">
                                             <thead class="thead-light">
                                             <tr>
-                                                <th>User Name</th>
+                                                <th>Full Name</th>
                                                 <th>Email</th>
-                                                <th>Gender</th>
-                                                <th>Country</th>
-                                                <th>View</th>
+                                                <th>User Name</th>
+                                                <th>User type</th>
+
                                             </tr><!--end tr-->
                                             </thead>
         
@@ -43,17 +43,14 @@
                                                 foreach ($my_data as $row){
                                             ?>
                                             <tr>
-                                                <td><?php echo $row->name; ?><small class="badge badge-soft-pink ml-1">New</small></td>
+                                                <td><?php echo $row->Name; ?><small class="badge badge-soft-pink ml-1">New</small></td>
                                                 <td><?php echo $row->email; ?></td>
-                                                <td><?php echo $row->gender; ?></td>
-                                                <td>United States</td>
-                                                <td>  
-                                                    <a href="<?php echo base_url();?>Admin_Users/profile/<?php echo $row->id; ?>"><button class="btn btn-primary">Profile</button></a>
-                                                </td>
+                                                <td><?php echo $row->username; ?></td>
+                                                <td><?php echo $row->user_type; ?></td>
                                             </tr><!--end tr-->
                                                     <?php } ?>
 
-                                                                                            
+
                                             </tbody>
                                         </table>                    
                                     </div>                                         

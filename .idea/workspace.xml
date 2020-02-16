@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d75e1a4-ce35-4843-9ae9-800d23cf6d65" name="Default Changelist" comment="">
+    <list default="true" id="839784b0-7ce4-4627-85eb-76a525158616" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/application/views/admin/addEmployee.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/registration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/registration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Admin_Employees.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Admin_Employees.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/admin_employees_m.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/admin_employees_m.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/admin/employees.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/employees.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,6 +147,9 @@
       <workItem from="1581599198651" duration="1920000" />
       <workItem from="1581602986615" duration="605000" />
       <workItem from="1581690317184" duration="738000" />
+      <workItem from="1581766258263" duration="7529000" />
+      <workItem from="1581830666651" duration="4236000" />
+      <workItem from="1581845740391" duration="2736000" />
     </task>
     <task id="LOCAL-00001" summary="dont know">
       <created>1579180458693</created>
@@ -313,13 +318,17 @@
     </state>
     <state x="269" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1581704486636" />
     <state x="359" y="194" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1579261779948" />
-    <state x="391" y="156" key="git4idea.merge.GitPullDialog" timestamp="1581760345317">
+    <state x="391" y="156" key="git4idea.merge.GitPullDialog" timestamp="1581760404133">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="156" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1581760345317" />
+    <state x="391" y="156" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1581760404133" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1581702756637">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1581702756637" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1581833744656">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1581833744656" />
   </component>
 </project>
