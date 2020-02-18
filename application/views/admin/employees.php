@@ -43,7 +43,7 @@
                                                 foreach ($my_data as $row){
                                             ?>
                                             <tr>
-                                                <td><?php echo $row->Name; ?><small class="badge badge-soft-pink ml-1">New</small></td>
+                                                <td><?php echo $row->Name; ?></td>
                                                 <td><?php echo $row->email; ?></td>
                                                 <td><?php echo $row->username; ?></td>
                                                 <td><?php echo $row->user_type; ?></td>
