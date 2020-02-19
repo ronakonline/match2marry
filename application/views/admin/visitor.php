@@ -12,7 +12,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="page-title-box">
-                        <h4 class="page-title">Users</h4>
+                        <h4 class="page-title">Visitors</h4>
                     </div><!--end page-title-box-->
                 </div><!--end col-->
             </div>
@@ -22,8 +22,8 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-body">
-<!--                            <a href="--><?php //echo base_url();?><!--Matrimonial"><button class="btn btn-primary px-4 float-right mt-0 mb-3"><i class="mdi mdi-plus-circle-outline mr-2"></i>Add New User</button></a>-->
-                            <h4 class="header-title mt-0">Users Details</h4>
+
+                            <h4 class="header-title mt-0">Visitor Details</h4>
 
                             <div class="table-responsive dash-social">
                                 <table id="datatable" class="table">

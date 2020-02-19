@@ -41,7 +41,7 @@
                 <ul class="nav">
                     <li class="nav-item"><a class="nav-link" href="<?php echo base_url(); ?>Admin"><i class="dripicons-meter"></i>Dashboard</a></li>
                     <li class="nav-item"><a class="nav-link " href="<?php echo base_url(); ?>Admin_liveusers"><i class="dripicons-user-group"></i>Live Users</a></li>
-                    <li class="nav-item"><a class="nav-link " href="<?php echo base_url(); ?>Admin_visitors"><i class="dripicons-user-group"></i>Visitor</a></li>
+                    <li class="nav-item"><a class="nav-link " href="<?php echo base_url(); ?>Admin_visitor"><i class="dripicons-user-group"></i>Visitor</a></li>
                 </ul>
             </div><!-- end Analytic -->
 
