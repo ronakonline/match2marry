@@ -89,7 +89,7 @@
         var rtype = document.getElementById("rtype");
         if(rtype.value != ""){
             if(rtype.value==="Services"){
-                window.location ="<?php echo base_url(); ?>Business";
+                window.location ="<?php echo base_url(); ?>VendorRegistration";
             }else{
                 window.location = "<?php echo base_url(); ?>Matrimonial";
                 return false;

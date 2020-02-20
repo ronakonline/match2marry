@@ -9,6 +9,7 @@ class Registration extends CI_Controller {
 		//print_r($data);
 		$this->load->view('registration',$data);
 	}
+
 	protected function getdata(){
 		$this->load->model('registration_m');
 		$result = $this->registration_m->fetch_state();
@@ -24,6 +25,7 @@ class Registration extends CI_Controller {
 		echo $this->registration_m->fetch_city($this->input->post('state_id'),$this->input->post('type'));
 		}
 	}
+
 	function register(){
 
 		$data = $this->input->post();
