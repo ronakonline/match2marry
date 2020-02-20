@@ -12,6 +12,13 @@ class visitors_m extends CI_Model {
         return;
     }
 
+    public function getusers(){
+        $this->load->database();
+        $q = $this->db->query('SELECT * FROM live_users where last_activity >= DATE_SUB(NOW(),INTERVAL 1 HOUR)');
+        $result = $q->result();
+        return $result;
+    }
+
     public function getuserprofile($id){
         $this->load->database();
         $q = $this->db->query('select * from users where id= '.$id);

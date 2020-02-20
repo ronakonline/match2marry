@@ -29,11 +29,8 @@
                                 <table id="datatable" class="table">
                                     <thead class="thead-light">
                                     <tr>
-                                        <th>User Name</th>
-                                        <th>Email</th>
-                                        <th>Gender</th>
-                                        <th>Country</th>
-                                        <th>View</th>
+                                        <th>IP</th>
+                                        <th>Country Name</th>
                                     </tr><!--end tr-->
                                     </thead>
 
@@ -42,13 +39,11 @@
                                     foreach ($my_data as $row){
                                         ?>
                                         <tr>
-                                            <td><?php echo $row->name; ?></td>
-                                            <td><?php echo $row->email; ?></td>
-                                            <td><?php echo $row->gender; ?></td>
-                                            <td>United States</td>
-                                            <td>
-                                                <a href="<?php echo base_url();?>Admin_Users/profile/<?php echo $row->id; ?>"><button class="btn btn-primary">Profile</button></a>
-                                            </td>
+                                            <td><?php echo $row->ip; ?></td>
+                                            <td><?php echo $row->location; ?></td>
+<!--                                            <td>-->
+<!--                                                <a href="--><?php //echo base_url();?><!--Admin_Users/profile/--><?php //echo $row->id; ?><!--"><button class="btn btn-primary">Profile</button></a>-->
+<!--                                            </td>-->
                                         </tr><!--end tr-->
                                     <?php } ?>
 
