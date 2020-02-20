@@ -36,8 +36,10 @@
 
                                     <tbody>
                                     <?php
-                                    foreach ($my_data as $row){
-                                        ?>
+                                    if(count($my_data)>0){
+                                        foreach ($my_data as $row){
+                                            ?>
+
                                         <tr>
                                             <td><?php echo $row->ip; ?></td>
                                             <td><?php echo $row->location; ?></td>
@@ -45,10 +47,12 @@
 <!--                                                <a href="--><?php //echo base_url();?><!--Admin_Users/profile/--><?php //echo $row->id; ?><!--"><button class="btn btn-primary">Profile</button></a>-->
 <!--                                            </td>-->
                                         </tr><!--end tr-->
-                                    <?php } ?>
+                                    <?php }
+                                    }else{
+                                      echo "<tr><td>No visitors</td></tr>";
+                                    } ?>
 
-
-                                    </tbody>
+                                   </tbody>
                                 </table>
                             </div>
                         </div><!--end card-body-->
