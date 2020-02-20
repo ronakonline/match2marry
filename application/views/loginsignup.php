@@ -24,15 +24,14 @@
 				</button>
 			</div>
 			<div class="modal-body">
-				<form action="http://aazztech.com/" id="login-form">
-					<input type="text" class="form-control" placeholder="Username or Email" required>
-					<input type="password" class="form-control" placeholder="Password" required>
+				<form action="<?php echo base_url();?>VendorRegistration/checklogin" id="login-form" method="post">
+					<input type="text" name="email" class="form-control" placeholder="Username or Email" required>
+					<input type="password" name="password" class="form-control" placeholder="Password" required>
 					<div class="keep_signed custom-control custom-checkbox checkbox-outline checkbox-outline-primary">
 						<input type="checkbox" class="custom-control-input" name="keep_signed_in" value="1" id="keep_signed_in">
-						<select class="form-control" id="ltype">
+						<select class="form-control" name="ltype" id="ltype">
 							<option value="Matrimonial">Matrimonial</option>
 							<option value="Services">Services</option>
-
 						</select>
 						<label for="keep_signed_in" class="not_empty custom-control-label">Keep me signed in</label>
 					</div>
@@ -63,7 +62,7 @@
 				</button>
 			</div>
 			<div class="modal-body">
-				<form  id="signup-form">
+				<form id="signup-form">
 					<select class="form-control" id="rtype">
 						<option value="Matrimonial">Matrimonial</option>
 						<option value="Services">Services</option>
@@ -90,6 +89,18 @@
         if(rtype.value != ""){
             if(rtype.value==="Services"){
                 window.location ="<?php echo base_url(); ?>VendorRegistration";
+            }else{
+                window.location = "<?php echo base_url(); ?>Matrimonial";
+                return false;
+            }
+        }
+    }
+
+    function redirectL(){
+        var rtype = document.getElementById("ltype");
+        if(rtype.value != ""){
+            if(rtype.value==="Services"){
+                return ;
             }else{
                 window.location = "<?php echo base_url(); ?>Matrimonial";
                 return false;

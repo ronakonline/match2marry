@@ -8,6 +8,29 @@ class VendorRegistration extends CI_Controller{
         $this->load->view('VendorRegistration',$data);
     }
 
+    public function checklogin(){
+
+        $data =  $this->input->post();
+        if ($data['ltype'] == 'Services'){
+            $this->load->model('Vendor_m');
+            $result = $this->Vendor_m->check($data);
+            if($result!=1) {
+                $_SESSION['user'] = $result;
+            }else {
+                redirect(base_url().'Admin_login');
+            }
+        }
+
+    }
+    public function logout(){
+        session_destroy();
+        redirect(base_url());
+
+    }
+    public function Recover(){
+        $this->load->view('admin/recover-pw');
+    }
+
     public function add(){
 //        $this->load->library('form_validation');
 //        $this->form_validation->set_rules('name', 'Full Name', 'required|alpha');
