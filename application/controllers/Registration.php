@@ -34,9 +34,10 @@ class Registration extends CI_Controller {
 		// set path to store uploaded files
 		$config['upload_path'] = './assets/pdf';
 		// set allowed file types
-		$config['allowed_types'] = 'pdf';
+		$config['allowed_types'] = 'pdf|jpg|png|jpeg';
 		// set upload limit, set 0 for no limit
 		$config['max_size']    = 0;
+		$config['file_name'] = $data['fullname'].'-IP'.time();
 
 		// load upload library with custom config settings
 		$this->load->library('upload', $config);
@@ -48,12 +49,20 @@ class Registration extends CI_Controller {
 
 		}
 		$data['ip'] = $this->upload->data('file_name');
+		$config['file_name'] = $data['fullname'].'-DP'.time();
+
+		// load upload library with custom config settings
+		$this->load->library('upload', $config);
 		if (!$this->upload->do_upload('profilephoto'))
 		{
 			print_r($this->upload->display_errors());
 
 		}
 		$data['profilephoto'] = $this->upload->data('file_name');
+		$config['file_name'] = $data['fullname'].'-BIO'.time();
+
+		// load upload library with custom config settings
+		$this->load->library('upload', $config);
 		if (!$this->upload->do_upload('biodata'))
 		{
 			print_r($this->upload->display_errors());

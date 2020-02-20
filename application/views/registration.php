@@ -657,8 +657,8 @@
                                                     </label>
 
                                             </div>
-                                        <div class="col-1" style="display: inline-block"> <i class="fa fa-times" aria-hidden="true" style="padding-top: 10px; color:green" ></i></div>
-                                        <div class="col-1" style="display: inline-block"> <i class="fa fa-check" aria-hidden="true" style="padding-top: 10px; color:green" ></i></div>
+                                        <div class="col-1" style="display: inline-block"> <i class="fa fa-check" aria-hidden="true" style="padding-top: 10px; color:green; visibility: hidden" id="imagecheck" ></i></div>
+                                        <div class="col-1" style="display: inline-block"> <i class="fa fa-check" aria-hidden="true" style="padding-top: 10px; color:green; visibility: hidden" id="idcheck" ></i></div>
                                              <div class="col-2">
 
                                                     <label class="file">
@@ -679,7 +679,7 @@
                                                     </label>
 
                                             </div>
-                                               <div class="col-1" style="display: inline-block"> <i class="fa fa-check" aria-hidden="true" style="padding-top: 10px; color:green" ></i></div>
+                                               <div class="col-1" style="display: inline-block"> <i class="fa fa-check" aria-hidden="true" style="padding-top: 10px; color:green; visibility: hidden" id="biocheck" ></i></div>
 
                                                <div class="col-2">
 
