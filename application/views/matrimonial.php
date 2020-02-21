@@ -11,6 +11,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/intl-tel-input-master/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
 
     <style type="text/css">
         body {
@@ -197,6 +199,51 @@
 </div>
 </form>
 
+<?php
+    if(isset($_SESSION['register'])){
+        if($_SESSION['register']==1){
+            echo "<script>$.confirm({
+                                        title: 'Congratulations!',
+                                        content: 'Registration completed successfully. Download Your Pofile in PDF by clicking button below',
+                                        type: 'green',
+                                        typeAnimated: true,
+                                        buttons: {
+                                            tryAgain: {
+                                                text: 'Download',
+                                                btnClass: 'btn-green',
+                                                action: function(){
+                                                    location.href = '".base_url()."Registration/convertpdf'    
+                                                }
+                                            },
+                                            close: function () {
+                                            }
+                                        }
+                                    });</script>";
+        }
+        unset($_SESSION['register']);
+    }
+    if(isset($_SESSION['error'])){
+        if($_SESSION['error']==1){
+            echo "<script>$.confirm({
+                                        title: 'Encountered an error!',
+                                        content: 'Something went downhill, this may be serious',
+                                        type: 'red',
+                                        typeAnimated: true,
+                                        buttons: {
+                                            tryAgain: {
+                                                text: 'Try again',
+                                                btnClass: 'btn-red',
+                                                action: function(){
+                                                }
+                                            },
+                                            close: function () {
+                                            }
+                                        }
+                                    });</script>";
+        }
+        unset($_SESSION['error']);
+    }
+?>
 <!-- Modal HTML -->
 <div id="myModal" class="modal fade">
     <div class="modal-dialog modal-login">

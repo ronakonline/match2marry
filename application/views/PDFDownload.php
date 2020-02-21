@@ -28,8 +28,8 @@
 <div style="position:absolute;left:50%;margin-left:-306px;top:0px;width:612px;height:792px;border-style:outset;overflow:hidden">
     <div style="position:absolute;left:0px;top:0px">
         <img src="http://design.creativestrokes.xyz/match2marry/assets/images/b1.jpg" width=612 height=792></div>
-    <div style="position:absolute;left:131.18px;top:39.60px" class="cls_002"><span class="cls_002">First Last</span></div>
-    <div style="position:absolute;left:236.93px;top:89.66px" class="cls_003"><span class="cls_003">Who I am ?</span></div>
+    <div style="position:absolute;left:131.18px;top:39.60px" class="cls_012"><span class="cls_002">First Last</span></div>
+    <div style="position:absolute;left:236.93px;top:89.66px" class="cls_012"><span class="cls_003">Who I am ?</span></div>
     <div style="position:absolute;left:236.93px;top:106.82px" class="cls_004"><span class="cls_004">I consider myself as an honest, motivated indi-</span></div>
     <div style="position:absolute;left:236.93px;top:122.90px" class="cls_004"><span class="cls_004">vidual, looking for upward mobility in profes-</span></div>
     <div style="position:absolute;left:236.93px;top:138.98px" class="cls_004"><span class="cls_004">sional career and further academic pursuit.</span></div>

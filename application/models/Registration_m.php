@@ -70,7 +70,7 @@ class registration_m extends CI_Model {
         $pass = md5($data['password']);
         $lk = implode(',',$data['lk']);
         $query = $this->db->query('insert into users values(null,"'.$data['fullname'].'","'.$data['email'].'","'.$pass.'","'.$data['dob'].'","'.$data['gender'].'","'.$data['ncountry'].'","'.$data['nstate'].'","'.$data['ncity'].'","'.$data['rcountry'].'","'.$data['cstate'].'","'.$data['ccity'].'","'.$data['ms'].'","'.$data['child'].'","'.$data['height'].'","'.$data['inch'].'","'.$data['btype'].'","'.$data['health'].'","'.$data['wol'].'","'.$data['ft'].'","'.$data['rp'].'","'.$data['fiqhs'].'","'.$data['wywm'].'","'.$data['nationality'].'","'.$data['edu'].'","'.$data['wp'].'","'.$data['nl'].'","'.$lk.'","'.$data['ec'].'","'.$data['msa'].'","'.$data['gname'].'","'.$data['gphone'].'","'.$data['ip'].'","'.$data['profilephoto'].'","'.$data['biodata'].'","'.$data['facebook'].'",1)');
-        echo $query;
+        return $query;
     }
  
 }

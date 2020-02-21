@@ -73,7 +73,38 @@ class Registration extends CI_Controller {
 		$data['biodata'] = $this->upload->data('file_name');
 
 		$this->load->model('registration_m');
-		$this->registration_m->register($data);
+		$result = $this->registration_m->register($data);
+		if($result==1){
+			$_SESSION['register']=1;
+		}else{
+			$_SESSION['error']=1;
+		}
+		redirect(base_url().'Matrimonial');
+
+	}
+	function convertpdf()
+	{
+
+		$this->load->view('PDFDownload');
+
+		// Get output html
+		$html = $this->output->get_output();
+
+		// Load pdf library
+		$this->load->library('pdf');
+
+		// Load HTML content
+		$this->dompdf->loadHtml($html);
+
+		// (Optional) Setup the paper size and orientation
+		$this->dompdf->setPaper('A4', 'landscape');
+
+		// Render the HTML as PDF
+		$this->dompdf->render();
+
+		// Output the generated PDF (1 = download and 0 = preview)
+		$this->dompdf->stream("welcome.pdf", array("Attachment"=>1));
+		redirect(base_url());
 	}
 }
 ?>
