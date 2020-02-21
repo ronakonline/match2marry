@@ -18,7 +18,8 @@ class VendorRegistration extends CI_Controller{
                 $_SESSION['vendor'] = $result;
                 redirect(base_url().'Vendor');
             }else {
-
+                    $_SESSION['error']=1;
+                    redirect(base_url());
             }
         }
     }

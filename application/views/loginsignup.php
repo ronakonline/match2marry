@@ -1,3 +1,12 @@
+<?php
+    if(isset($_SESSION['error'])){
+      echo "<script type=\"text/javascript\">
+    $(window).on('load',function(){
+        $('#login_modal').modal('show');
+    });
+</script>";
+    }
+?>
 <!-- start .author-area -->
 <div class="author-area">
 	<div class="author__access_area">
@@ -43,6 +52,14 @@
 						<li>Not a member? <a href="#" class="access-link" data-dismiss="modal" data-toggle="modal" data-target="#signup_modal">Sign up</a></li>
 						<li><a href="#">Recover Password</a></li>
 					</ul>
+                    <?php
+                        if(isset($_SESSION['error'])){
+                            if($_SESSION['error']==1){
+                                echo '<p>Invalid Username or Password</p>';
+                                unset($_SESSION['error']);
+                            }
+                        }
+                    ?>
 
 				</div>
 
@@ -96,17 +113,6 @@
         }
     }
 
-    function redirectL(){
-        var rtype = document.getElementById("ltype");
-        if(rtype.value != ""){
-            if(rtype.value==="Services"){
-                return ;
-            }else{
-                window.location = "<?php echo base_url(); ?>Matrimonial";
-                return false;
-            }
-        }
-    }
 </script>
 
 
