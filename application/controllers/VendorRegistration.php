@@ -15,18 +15,14 @@ class VendorRegistration extends CI_Controller{
             $this->load->model('Vendor_m');
             $result = $this->Vendor_m->check($data);
             if($result!=1) {
-                $_SESSION['user'] = $result;
+                $_SESSION['vendor'] = $result;
+                redirect(base_url().'Vendor');
             }else {
-                redirect(base_url().'Admin_login');
+
             }
         }
-
     }
-    public function logout(){
-        session_destroy();
-        redirect(base_url());
 
-    }
     public function Recover(){
         $this->load->view('admin/recover-pw');
     }
