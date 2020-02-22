@@ -34,7 +34,16 @@
 			</div>
 			<div class="modal-body">
 				<form action="<?php echo base_url();?>VendorRegistration/checklogin" id="login-form" method="post">
-					<input type="text" name="email" class="form-control" placeholder="Username or Email" required>
+                    <?php
+                    if(isset($_SESSION['error'])){
+                        if($_SESSION['error']==1){
+                            echo '<p class="text-center" style="color: red;">Invalid Username or Password</p>';
+                            unset($_SESSION['error']);
+                        }
+                    }
+                    ?>
+
+                    <input type="text" name="email" class="form-control" placeholder="Username or Email" required>
 					<input type="password" name="password" class="form-control" placeholder="Password" required>
 					<div class="keep_signed custom-control custom-checkbox checkbox-outline checkbox-outline-primary">
 						<input type="checkbox" class="custom-control-input" name="keep_signed_in" value="1" id="keep_signed_in">
@@ -52,15 +61,6 @@
 						<li>Not a member? <a href="#" class="access-link" data-dismiss="modal" data-toggle="modal" data-target="#signup_modal">Sign up</a></li>
 						<li><a href="#">Recover Password</a></li>
 					</ul>
-                    <?php
-                        if(isset($_SESSION['error'])){
-                            if($_SESSION['error']==1){
-                                echo '<p>Invalid Username or Password</p>';
-                                unset($_SESSION['error']);
-                            }
-                        }
-                    ?>
-
 				</div>
 
 			</div>
