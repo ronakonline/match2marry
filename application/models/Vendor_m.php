@@ -20,10 +20,10 @@
             }
         }
 
-        public function getvdetails(){
+        public function getvdetails($id){
             $this->load->database();
 
-            $q = $this->db->query('select * from vendors');
+            $q = $this->db->query('select * from vendors where id='.$id.'');
 
             $result = $q->result();
             //print_r($result['logo']);

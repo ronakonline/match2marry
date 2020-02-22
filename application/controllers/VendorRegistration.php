@@ -29,7 +29,7 @@ class VendorRegistration extends CI_Controller{
             $data['page'] = 'Vendor registration';
             $data['link']='VendorRegistration';
             $this->load->model('Vendor_m');
-            $data = $this->Vendor_m->getvdetails();
+            $data = $this->Vendor_m->getvdetails($_SESSION['vendor'][0]->id);
             $this->load->view('vendorupdate',array('my_data'=>$data));
         }else{
             redirect(base_url().'Admin_login');
