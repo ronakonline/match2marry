@@ -30,33 +30,26 @@
 
 
                             <div class="menu-right order-lg-2 order-sm-2">
-
-                                <?php $this->load->view('loginsignup'); ?>
-
-                                <div class="offcanvas-menu d-none">
-                                    <a href="#" class="offcanvas-menu__user"><i class="la la-user"></i></a>
-                                    <div class="offcanvas-menu__contents">
-                                        <a href="#" class="offcanvas-menu__close"><i class="la la-times-circle"></i></a>
-                                        <div class="author-avatar">
-                                            <img src="<?php echo base_url();?>assets/images/author-avatar.png" alt="" class="rounded-circle">
-                                        </div>
-                                        <ul class="list-unstyled">
-                                            <li><a href="dashboard-listings.html">My Profile</a></li>
-                                            <li><a href="dashboard-listings.html">My Listing</a></li>
-                                            <li><a href="dashboard-listings.html">Favorite Listing</a></li>
-                                            <li><a href="add-listing.html">Add Listing</a></li>
-                                            <li><a href="#">Logout</a></li>
-                                        </ul>
-                                        <div class="search_area">
-                                            <form action="http://aazztech.com/">
-                                                <div class="input-group input-group-light">
-                                                    <input type="text" class="form-control search_field" placeholder="Search here..." autocomplete="off">
+                                <?php
+                                    if(isset($_SESSION['matrimonial'])) {
+                                        echo '  <div class="offcanvas-menu" style="display: block;">
+                                            <a href="#" class="offcanvas-menu__user"><i class="la la-user"></i></a>
+                                            <div class="offcanvas-menu__contents">
+                                                <a href="#" class="offcanvas-menu__close"><i class="la la-times-circle"></i></a>
+                                                <div class="author-avatar">
+                                                    <img src="<?php echo base_url();?>assets/images/author-avatar.png" alt="" class="rounded-circle">
                                                 </div>
-                                                <button type="submit" class="btn btn-sm btn-secondary">Search</button>
-                                            </form>
-                                        </div><!-- ends: .search_area -->
-                                    </div><!-- ends: .author-info -->
-                                </div><!-- ends: .offcanvas-menu -->
+                                                <ul class="list-unstyled">
+                                                    <li><a href="Profile">My Profile</a></li>
+                                                    <li><a href="Registration/logout">Logout</a></li>
+                                                </ul>
+                                              
+                                            </div><!-- ends: .author-info -->
+                                        </div><!-- ends: .offcanvas-menu -->';
+                                    }else{
+                                $this->load->view('loginsignup'); }?>
+
+
                             </div><!-- ends: .menu-right -->
                         </div>
                     </div>

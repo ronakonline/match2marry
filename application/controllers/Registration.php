@@ -106,5 +106,36 @@ class Registration extends CI_Controller {
 		$this->dompdf->stream("welcome.pdf", array("Attachment"=>1));
 		redirect(base_url());
 	}
+
+	public function checklogin(){
+
+		$data =  $this->input->post();
+		if ($data['ltype'] == 'Services'){
+			$this->load->model('Vendor_m');
+			$result = $this->Vendor_m->check($data);
+			if($result!=1) {
+				$_SESSION['vendor'] = $result;
+				redirect(base_url().'Vendor');
+			}else {
+				$_SESSION['error']=1;
+				redirect(base_url());
+			}
+		}
+		else if($data['ltype']=='Matrimonial'){
+			$this->load->model('Registration_m');
+			$result = $this->Registration_m->check($data);
+			if($result!=1) {
+				$_SESSION['matrimonial'] = $result;
+				redirect(base_url());
+			}else {
+				$_SESSION['error']=1;
+				redirect(base_url());
+			}
+		}
+	}
+	public function  logout(){
+			unset($_SESSION['matrimonial']);
+			redirect(base_url());
+	}
 }
 ?>

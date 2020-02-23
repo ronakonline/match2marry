@@ -33,7 +33,7 @@
 				</button>
 			</div>
 			<div class="modal-body">
-				<form action="<?php echo base_url();?>VendorRegistration/checklogin" id="login-form" method="post">
+				<form action="<?php echo base_url();?>Registration/checklogin" id="login-form" method="post">
                     <?php
                     if(isset($_SESSION['error'])){
                         if($_SESSION['error']==1){

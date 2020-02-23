@@ -8,21 +8,7 @@ class VendorRegistration extends CI_Controller{
         $this->load->view('VendorRegistration',$data);
     }
 
-    public function checklogin(){
 
-        $data =  $this->input->post();
-        if ($data['ltype'] == 'Services'){
-            $this->load->model('Vendor_m');
-            $result = $this->Vendor_m->check($data);
-            if($result!=1) {
-                $_SESSION['vendor'] = $result;
-                redirect(base_url().'Vendor');
-            }else {
-                    $_SESSION['error']=1;
-                    redirect(base_url());
-            }
-        }
-    }
 
     public function openUpdate(){
         if(isset($_SESSION['vendor'])){
