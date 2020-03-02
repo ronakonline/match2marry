@@ -36,10 +36,10 @@
                                 <div class="select-basic">
                                     <select class="form-control" name="price">
                                         <option value="<?php echo $row->price; ?>"><?php echo $row->price; ?></option>
-                                        <option value="4">Ultra High ($$$$)</option>
-                                        <option value="3">Expensive ($$$)</option>
-                                        <option value="2">Moderate ($$)</option>
-                                        <option value="1">Cheap ($)</option>
+                                        <option value="Ultra High">Ultra High ($$$$)</option>
+                                        <option value="Expensive">Expensive ($$$)</option>
+                                        <option value="Moderate">Moderate ($$)</option>
+                                        <option value="Cheap">Cheap ($)</option>
                                     </select>
                                 </div>
                             </div>
@@ -51,7 +51,7 @@
                                 <div class="select-basic2">
                                     <label for="atbd_tags" class="form-label">Tags</label>
                                     <select class="form-control" name="tags" id="atbd_tags" multiple="multiple">
-                                        <option selected value="<?php echo $row->price; ?>"><?php echo $row->tags; ?></option>
+                                        <option selected value="<?php echo $row->tags; ?>"><?php echo $row->tags; ?></option>
                                         <option value="orange">orange</option>
                                         <option value="white">white</option>
                                         <option value="purple">purple</option>
@@ -62,7 +62,7 @@
                                 <label for="ad_categroy" class="form-label">Select Category</label>
                                 <div class="select-basic">
                                     <select class="form-control ad_search_category" name="category" id="ad_categroy">
-                                        <option value="<?php echo $row->price; ?>"><?php echo $row->category; ?></option>
+                                        <option value="<?php echo $row->category; ?>"><?php echo $row->category; ?></option>
                                         <option>Restaurant</option>
                                         <option>Food</option>
                                         <option>Lunch Pack</option>

@@ -51,7 +51,27 @@
                                               
                                             </div><!-- ends: .author-info -->
                                         </div><!-- ends: .offcanvas-menu -->';
-                                    }else{
+                                    }
+                                    elseif(isset($_SESSION['vendor'])){
+                                        echo '  <div class="offcanvas-menu" style="display: block;">
+                                            <a href="#" class="offcanvas-menu__user"><i class="la la-user"></i></a>
+                                            <div class="offcanvas-menu__contents">
+                                                <a href="#" class="offcanvas-menu__close"><i class="la la-times-circle"></i></a>
+                                                <div class="author-avatar">
+                                                    <img src="<?php echo base_url();?>assets/images/author-avatar.png" alt="" class="rounded-circle">
+                                                </div>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="Profile">My Profile</a></li>
+                                                    <li><a href="Vendor">Add listing</a></li>
+                                                    <li><a href="#">View listings</a></li>
+                                                    <li><a href="#">Enquiries</a></li>
+                                                    <li><a href="Registration/logout">Logout</a></li>
+                                                </ul>
+                                              
+                                            </div><!-- ends: .author-info -->
+                                        </div><!-- ends: .offcanvas-menu -->';
+                                    }
+                                    else{
                                         $this->load->view('loginsignup'); }?>
 
 
