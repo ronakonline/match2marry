@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="839784b0-7ce4-4627-85eb-76a525158616" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/application/views/addlisting.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/admin/visitor.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/admin/visitor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Vendor.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Vendor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/VendorRegistration.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/VendorRegistration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/Vendor_m.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Vendor_m.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/header1.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/header1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/vendorupdate.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/vendorupdate.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +90,9 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\match2marry\application\views\vendor" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\xampp\htdocs\match2marry\application\controllers" />
       <recent name="D:\xampp\htdocs\match2marry\application\views" />
@@ -97,6 +109,7 @@
         </serviceView>
       </list>
     </option>
+    <option name="showServicesTree" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -154,7 +167,29 @@
       <workItem from="1582082883386" duration="165000" />
       <workItem from="1582130679200" duration="596000" />
       <workItem from="1582171740213" duration="1743000" />
-      <workItem from="1582180057848" duration="1322000" />
+      <workItem from="1582180057848" duration="2794000" />
+      <workItem from="1582196469194" duration="2233000" />
+      <workItem from="1582209118093" duration="3444000" />
+      <workItem from="1582216252330" duration="5376000" />
+      <workItem from="1582223667690" duration="1179000" />
+      <workItem from="1582258964672" duration="434000" />
+      <workItem from="1582259450380" duration="3745000" />
+      <workItem from="1582280198534" duration="753000" />
+      <workItem from="1582292710965" duration="12654000" />
+      <workItem from="1582343858126" duration="2862000" />
+      <workItem from="1582370371721" duration="26000" />
+      <workItem from="1582390081544" duration="60000" />
+      <workItem from="1582427569598" duration="583000" />
+      <workItem from="1582436422142" duration="1370000" />
+      <workItem from="1582562801965" duration="1192000" />
+      <workItem from="1582603078834" duration="3854000" />
+      <workItem from="1582639312629" duration="2253000" />
+      <workItem from="1582647238736" duration="1629000" />
+      <workItem from="1582690287254" duration="566000" />
+      <workItem from="1582691249135" duration="3890000" />
+      <workItem from="1582724587172" duration="1600000" />
+      <workItem from="1582809441419" duration="874000" />
+      <workItem from="1582868356495" duration="1071000" />
     </task>
     <task id="LOCAL-00001" summary="dont know">
       <created>1579180458693</created>
@@ -247,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581848519086</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="vendor profile updatation">
+      <created>1582308421078</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1582308421078</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,13 +324,14 @@
     <MESSAGE value="404 error solved" />
     <MESSAGE value="new database added" />
     <MESSAGE value="employee side done, with validations" />
-    <option name="LAST_COMMIT_MESSAGE" value="employee side done, with validations" />
+    <MESSAGE value="vendor profile updatation" />
+    <option name="LAST_COMMIT_MESSAGE" value="vendor profile updatation" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="23" key="#Deployment" timestamp="1581337110374">
+    <state x="275" y="23" key="#Deployment" timestamp="1582437507342">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="23" key="#Deployment/0.0.1366.728@0.0.1366.728" timestamp="1581337110374" />
+    <state x="275" y="23" key="#Deployment/0.0.1366.728@0.0.1366.728" timestamp="1582437507342" />
     <state x="275" y="23" key="#Notifications" timestamp="1579696261948">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -301,11 +344,15 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="228" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1580133426694" />
-    <state x="306" y="0" width="749" height="495" key="CommitChangelistDialog2" timestamp="1581848516614">
+    <state x="306" y="0" width="749" height="495" key="CommitChangelistDialog2" timestamp="1582308419422">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="306" y="0" width="749" height="495" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1581848516614" />
+    <state x="306" y="0" width="749" height="495" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1582308419422" />
     <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1579265264604" />
+    <state x="129" y="55" key="DiffContextDialog" timestamp="1582183203730">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="129" y="55" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1582183203730" />
     <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1581337333345">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -321,10 +368,10 @@
     </state>
     <state x="184" y="12" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1579696162167" />
     <state x="184" y="12" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1579264484168" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1581848535936">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1582308430880">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1581848535936" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1582308430880" />
     <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1579265269273" />
     <state x="269" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1581704486636">
       <screen x="0" y="0" width="1366" height="728" />
@@ -335,17 +382,17 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1581948805684" />
-    <state x="391" y="156" key="git4idea.merge.GitPullDialog" timestamp="1581760404133">
+    <state x="391" y="156" key="git4idea.merge.GitPullDialog" timestamp="1582292730046">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="156" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1581760404133" />
+    <state x="391" y="156" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1582292730046" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1581702756637">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1581702756637" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1581833744656">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1582640118880">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1581833744656" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1582640118880" />
   </component>
 </project>

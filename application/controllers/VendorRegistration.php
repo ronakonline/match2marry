@@ -28,7 +28,11 @@ class VendorRegistration extends CI_Controller{
         $data['id'] = $id;
         $this->load->model('Vendor_m');
         $result = $this->Vendor_m->up($data);
+
+
         if($result!=0) {
+            unset($_SESSION['vendor']);
+            $result = $this->Vendor_m->getvdetails($data['id']);
             $_SESSION['vendor'] = $result;
             redirect(base_url().'Vendor');
         }else {

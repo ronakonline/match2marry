@@ -111,17 +111,19 @@ class Registration extends CI_Controller {
 
 		$data =  $this->input->post();
 		if ($data['ltype'] == 'Services'){
+			$_SESSION['user_type'] = 1;
 			$this->load->model('Vendor_m');
 			$result = $this->Vendor_m->check($data);
 			if($result!=1) {
 				$_SESSION['vendor'] = $result;
-				redirect(base_url().'Vendor');
+				redirect(base_url());
 			}else {
 				$_SESSION['error']=1;
 				redirect(base_url());
 			}
 		}
 		else if($data['ltype']=='Matrimonial'){
+			$_SESSION['user_type'] = 2;
 			$this->load->model('Registration_m');
 			$result = $this->Registration_m->check($data);
 			if($result!=1) {
@@ -135,6 +137,8 @@ class Registration extends CI_Controller {
 	}
 	public function  logout(){
 			unset($_SESSION['matrimonial']);
+			unset($_SESSION['vendor']);
+
 			redirect(base_url());
 	}
 }
