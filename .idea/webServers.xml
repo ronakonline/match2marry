@@ -10,6 +10,14 @@
           <option name="port" value="21" />
         </fileTransfer>
       </webServer>
+      <webServer id="58e4012e-dd35-4151-a7d1-5fffc5725414" name="match2marry" url="http://ftp.creativestrokes.xyz">
+        <fileTransfer host="ftp.creativestrokes.xyz" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>

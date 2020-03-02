@@ -74,7 +74,9 @@ class Registration extends CI_Controller {
 
 		$this->load->model('registration_m');
 		$result = $this->registration_m->register($data);
-		if($result==1){
+		echo  $result;
+		if(isset($result)){
+			$_SESSION['lastinsertedid']=$result;
 			$_SESSION['register']=1;
 		}else{
 			$_SESSION['error']=1;
@@ -84,8 +86,12 @@ class Registration extends CI_Controller {
 	}
 	function convertpdf()
 	{
-
-		$this->load->view('PDFDownload');
+//		if(!isset($_SESSION['lastinsertedid'])){
+//			redirect(base_url());
+//		}
+		$this->load->model('registration_m');
+		$data = $this->registration_m->fetchuser($_SESSION['lastinsertedid']);
+		$this->load->view('PDFDownload',array('my_data'=>$data));
 
 		// Get output html
 		$html = $this->output->get_output();
@@ -104,6 +110,7 @@ class Registration extends CI_Controller {
 
 		// Output the generated PDF (1 = download and 0 = preview)
 		$this->dompdf->stream("welcome.pdf", array("Attachment"=>1));
+		//unset($_SESSION['register']);
 		redirect(base_url());
 	}
 

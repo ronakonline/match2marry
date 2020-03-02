@@ -45,7 +45,7 @@
                                                     <img src="<?php echo base_url();?>assets/images/author-avatar.png" alt="" class="rounded-circle">
                                                 </div>
                                                 <ul class="list-unstyled">
-                                                    <li><a href="Profile">My Profile</a></li>
+                                                    <li><a href="Myprofile">My Profile</a></li>
                                                     <li><a href="Registration/logout">Logout</a></li>
                                                 </ul>
                                               

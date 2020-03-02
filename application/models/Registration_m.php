@@ -70,7 +70,10 @@ class registration_m extends CI_Model {
         $pass = md5($data['password']);
         $lk = implode(',',$data['lk']);
         $query = $this->db->query('insert into users values(null,"'.$data['fullname'].'","'.$data['email'].'","'.$pass.'","'.$data['dob'].'","'.$data['gender'].'","'.$data['ncountry'].'","'.$data['nstate'].'","'.$data['ncity'].'","'.$data['rcountry'].'","'.$data['cstate'].'","'.$data['ccity'].'","'.$data['ms'].'","'.$data['child'].'","'.$data['height'].'","'.$data['inch'].'","'.$data['btype'].'","'.$data['health'].'","'.$data['wol'].'","'.$data['ft'].'","'.$data['rp'].'","'.$data['fiqhs'].'","'.$data['wywm'].'","'.$data['nationality'].'","'.$data['edu'].'","'.$data['wp'].'","'.$data['nl'].'","'.$lk.'","'.$data['ec'].'","'.$data['msa'].'","'.$data['gname'].'","'.$data['gphone'].'","'.$data['ip'].'","'.$data['profilephoto'].'","'.$data['biodata'].'","'.$data['facebook'].'",1)');
-        return $query;
+       if($query==1){
+        $insert_id = $this->db->insert_id();
+        return $insert_id;}
+       else{return 0;}
     }
 
     public function check($data){
@@ -85,5 +88,16 @@ class registration_m extends CI_Model {
             return 1;
         }
     }
- 
+
+    public function fetchuser($id){
+        $this->load->database();
+        //echo $id;
+        $q = $this->db->query('select * from users where id='.$id);
+        if($q->num_rows() > 0){
+            $result = $q->result();
+            return $result;
+        } else {
+            return 1;
+        }
+    }
 }
