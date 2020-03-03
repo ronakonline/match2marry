@@ -14,31 +14,31 @@
                         </div>
                     </div>
                     <div class="atbdb_content_module_contents">
-                        <form action="/">
+                        <form action="<?php echo base_url()?>vendor/addlist" method="post">
                             <div class="form-group">
                                 <label for="title" class="form-label">Title</label>
-                                <input type="text" class="form-control" id="title" placeholder="Enter Title"
+                                <input type="text" class="form-control" id="title" name="title"  placeholder="Enter Title"
                                        required>
                             </div>
                             <div class="form-group">
                                 <label for="desc" class="form-label">Long Description</label>
-                                <textarea id="desc" rows="8" class="form-control"
+                                <textarea id="desc" rows="8" name="description" class="form-control"
                                           placeholder="Description"></textarea>
                             </div>
                             <div class="form-group">
                                 <label for="tagline" class="form-label">Tagline</label>
                                 <input type="text" class="form-control" id="tagline"
-                                       placeholder="Your Listing Motto or Tagline" required>
+                                      name="tagline" placeholder="Your Listing Motto or Tagline" required>
                             </div>
                             <div class="form-group">
                                 <label class="form-label">Pricing</label>
                                 <div class="select-basic">
-                                    <select class="form-control" name="price">
-                                        <option value="0">Select Price Range</option>
-                                        <option value="4">Ultra High ($$$$)</option>
-                                        <option value="3">Expensive ($$$)</option>
-                                        <option value="2">Moderate ($$)</option>
-                                        <option value="1">Cheap ($)</option>
+                                    <select class="form-control" name="pricing">
+                                        <option value="">Select Price Range</option>
+                                        <option value="Ultra high">Ultra High ($$$$)</option>
+                                        <option value="Expensive">Expensive ($$$)</option>
+                                        <option value="Moderate">Moderate ($$)</option>
+                                        <option value="Cheap">Cheap ($)</option>
                                     </select>
                                 </div>
                             </div>
@@ -46,7 +46,7 @@
                             <div class="form-group">
                                 <div class="select-basic2">
                                     <label for="atbd_tags" class="form-label">Tags</label>
-                                    <select class="form-control" name="tags" id="atbd_tags" multiple="multiple">
+                                    <select class="form-control" name="tags" id="atbd_tags" multiple="multiple" name="tags">
                                         <option value="orange">orange</option>
                                         <option value="white">white</option>
                                         <option value="purple">purple</option>
@@ -56,7 +56,7 @@
                             <div class="form-group">
                                 <label for="ad_categroy" class="form-label">Select Category</label>
                                 <div class="select-basic">
-                                    <select class="form-control ad_search_category" id="ad_categroy">
+                                    <select class="form-control ad_search_category" name="category" id="ad_categroy">
                                         <option>Select Category</option>
                                         <option>Restaurant</option>
                                         <option>&nbsp;&nbsp; Food</option>
@@ -90,199 +90,27 @@
                             <div class="form-group">
                                 <label for="address" class="form-label">Address</label>
                                 <input type="text" placeholder="Listing Address eg. Houghton Street London WC2A 2AE UK"
-                                       id="address" class="form-control" required>
+                                       name="address" id="address" class="form-control" required>
                             </div>
                             <div class="form-group">
                                 <label for="phone_number" class="form-label">Phone Number</label>
-                                <input type="text" placeholder="Phone Number" id="phone_number" class="form-control" required>
+                                <input type="text" placeholder="Phone Number" name="telephone" id="phone_number" class="form-control" required>
                             </div>
                             <div class="form-group">
                                 <label for="contact_email" class="form-label">Email</label>
-                                <input type="email" id="contact_email" class="form-control" placeholder="Enter Email" required>
+                                <input type="email" name="email" id="contact_email" class="form-control" placeholder="Enter Email" required>
                             </div>
                             <div class="form-group">
                                 <label for="website_address" class="form-label">Website</label>
-                                <input type="text" id="website_address" class="form-control"
+                                <input type="text" id="website_address" name="website" class="form-control"
                                        placeholder="Listing Website eg. http://example.com">
                             </div>
 
-                        </form>
+
                     </div><!-- ends: .atbdb_content_module_contents -->
                 </div><!-- ends: .atbd_content_module -->
             </div><!-- ends: .col-lg-10 -->
-            <div class="col-lg-10 offset-lg-1">
-                <div class="atbd_content_module">
-                    <div class="atbd_content_module__tittle_area">
-                        <div class="atbd_area_title">
-                            <h4><span class="la la-calendar-check-o"></span> Opening/Business Hour Information</h4>
-                        </div>
-                    </div>
-                    <div class="atbdb_content_module_contents">
-                        <div class="business-hour">
 
-
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <label for="bdbh_saturday" class="atbd_day_label form-label">Saturday</label>
-                                        <div class="row atbd_row_bg">
-                                            <div class="col-sm-6">
-                                                <label for="bdbh_saturday" class="not_empty">Start time</label>
-                                                <input type="time" id="bdbh_saturday" value=""
-                                                       class="form-control directory_field">
-                                            </div>
-                                            <div class="col-sm-6 mt-3 mt-sm-0">
-                                                <label for="bdbh_saturday_cls" class="not_empty">Close time</label>
-                                                <input type="time" id="bdbh_saturday_cls" value=""
-                                                       class="form-control directory_field">
-                                            </div>
-                                        </div>
-
-                                        <div class="atbd_mark_as_closed custom-control custom-checkbox checkbox-outline checkbox-outline-primary">
-                                            <input type="checkbox" class="custom-control-input" name="enable247hour" value="1" id="sat_cls">
-                                            <label for="sat_cls" class="not_empty custom-control-label"> Mark as Closed </label>
-                                        </div>
-                                    </div><!-- ends: .form-group -->
-
-                                    <div class="form-group">
-                                        <label for="bdbh_sunday" class="atbd_day_label form-label">Sunday</label>
-                                        <div class="row atbd_row_bg">
-                                            <div class="col-sm-6">
-                                                <label for="bdbh_sunday" class="not_empty">Start time</label>
-                                                <input type="time" id="bdbh_sunday" value=""
-                                                       class="form-control directory_field">
-                                            </div>
-
-                                            <div class="col-sm-6 mt-3 mt-sm-0">
-                                                <label for="bdbh_sunday_cls" class="not_empty">Close time</label>
-                                                <input type="time" id="bdbh_sunday_cls" value=""
-                                                       class="form-control directory_field">
-                                            </div>
-                                        </div>
-
-                                        <div class="atbd_mark_as_closed custom-control custom-checkbox checkbox-outline checkbox-outline-primary">
-                                            <input type="checkbox" class="custom-control-input" name="enable247hour" value="1" id="sun_cls">
-                                            <label for="sun_cls" class="not_empty custom-control-label"> Mark as Closed </label>
-                                        </div>
-                                    </div><!-- ends: .form-group -->
-
-                                    <div class="form-group">
-                                        <label for="bdbh_monday" class="atbd_day_label form-label">Monday</label>
-                                        <div class="row atbd_row_bg">
-                                            <div class="col-sm-6">
-                                                <label for="bdbh_monday" class="not_empty">Start time</label>
-                                                <input type="time" id="bdbh_monday" value=""
-                                                       class="form-control directory_field">
-                                            </div>
-
-                                            <div class="col-sm-6 mt-3 mt-sm-0">
-                                                <label for="bdbh_monday_cls" class="not_empty">Close time</label>
-                                                <input type="time" id="bdbh_monday_cls" value=""
-                                                       class="form-control directory_field">
-                                            </div>
-                                        </div>
-
-                                        <div class="atbd_mark_as_closed custom-control custom-checkbox checkbox-outline checkbox-outline-primary">
-                                            <input type="checkbox" class="custom-control-input" name="enable247hour" value="1" id="mon_cls">
-                                            <label for="mon_cls" class="not_empty custom-control-label"> Mark as Closed </label>
-                                        </div>
-                                    </div><!-- ends: .form-group -->
-
-                                    <div class="form-group">
-                                        <label for="bdbh_tuesday" class="atbd_day_label form-label">Tuesday</label>
-                                        <div class="row atbd_row_bg">
-                                            <div class="col-sm-6">
-                                                <label for="bdbh_tuesday" class="not_empty">Start time</label>
-                                                <input type="time" id="bdbh_tuesday" value=""
-                                                       class="form-control directory_field">
-                                            </div>
-
-                                            <div class="col-sm-6 mt-3 mt-sm-0">
-                                                <label for="bdbh_tuesday_cls" class="not_empty">Close time</label>
-                                                <input type="time" id="bdbh_tuesday_cls" value=""
-                                                       class="form-control directory_field">
-                                            </div>
-                                        </div>
-
-                                        <div class="atbd_mark_as_closed custom-control custom-checkbox checkbox-outline checkbox-outline-primary">
-                                            <input type="checkbox" class="custom-control-input" name="enable247hour" value="1" id="tue_cls">
-                                            <label for="tue_cls" class="not_empty custom-control-label"> Mark as Closed </label>
-                                        </div>
-                                    </div><!-- ends: .form-group -->
-
-                                    <div class="form-group">
-                                        <label for="bdbh_wednesday"
-                                               class="atbd_day_label form-label">Wednesday</label>
-                                        <div class="row atbd_row_bg">
-                                            <div class="col-sm-6">
-                                                <label for="bdbh_wednesday" class="not_empty">Start time</label>
-                                                <input type="time" id="bdbh_wednesday" value=""
-                                                       class="form-control directory_field">
-                                            </div>
-
-                                            <div class="col-sm-6 mt-3 mt-sm-0">
-                                                <label for="bdbh_wednesday_cls" class="not_empty">Close time</label>
-                                                <input type="time" id="bdbh_wednesday_cls" value=""
-                                                       class="form-control directory_field">
-                                            </div>
-                                        </div>
-
-                                        <div class="atbd_mark_as_closed custom-control custom-checkbox checkbox-outline checkbox-outline-primary">
-                                            <input type="checkbox" class="custom-control-input" name="enable247hour" value="1" id="wed_cls">
-                                            <label for="wed_cls" class="not_empty custom-control-label"> Mark as Closed </label>
-                                        </div>
-                                    </div><!-- ends: .form-group -->
-
-                                    <div class="form-group">
-                                        <label for="bdbh_thursday" class="atbd_day_label form-label">Thursday</label>
-                                        <div class="row atbd_row_bg">
-                                            <div class="col-sm-6">
-                                                <label for="bdbh_thursday" class="not_empty">Start time</label>
-                                                <input type="time" id="bdbh_thursday" value=""
-                                                       class="form-control directory_field">
-                                            </div>
-
-                                            <div class="col-sm-6 mt-3 mt-sm-0">
-                                                <label for="bdbh_thursday_cls" class="not_empty">Close time</label>
-                                                <input type="time" id="bdbh_thursday_cls" value=""
-                                                       class="form-control directory_field">
-                                            </div>
-                                        </div>
-
-                                        <div class="atbd_mark_as_closed custom-control custom-checkbox checkbox-outline checkbox-outline-primary">
-                                            <input type="checkbox" class="custom-control-input" name="enable247hour" value="1" id="thu_cls">
-                                            <label for="thu_cls" class="not_empty custom-control-label"> Mark as Closed </label>
-                                        </div>
-                                    </div><!-- ends: .form-group -->
-
-                                    <div class="form-group">
-                                        <label for="bdbh_friday" class="atbd_day_label form-label">Friday</label>
-                                        <div class="row atbd_row_bg">
-                                            <div class="col-sm-6">
-                                                <label for="bdbh_friday" class="not_empty">Start time</label>
-                                                <input type="time" id="bdbh_friday" value=""
-                                                       class="form-control directory_field">
-                                            </div>
-
-                                            <div class="col-sm-6 mt-3 mt-sm-0">
-                                                <label for="bdbh_friday_cls" class="not_empty">Close time</label>
-                                                <input type="time" id="bdbh_friday_cls" value=""
-                                                       class="form-control directory_field">
-                                            </div>
-                                        </div>
-
-                                        <div class="atbd_mark_as_closed custom-control custom-checkbox checkbox-outline checkbox-outline-primary">
-                                            <input type="checkbox" class="custom-control-input" name="enable247hour" value="1" id="fri_cls">
-                                            <label for="fri_cls" class="not_empty custom-control-label"> Mark as Closed </label>
-                                        </div>
-                                    </div><!-- ends: .form-group -->
-
-                                </div> <!--ends col-md-6 col-sm-12-->
-                            </div> <!--ends .row-->
-                        </div>
-                    </div><!-- ends: .atbdb_content_module_contents -->
-                </div><!-- ends: .atbd_content_module -->
-            </div><!-- ends: .col-lg-10 -->
 
 
 
@@ -309,7 +137,7 @@
                                         <label for="manual_lat" class="not_empty"> Latitude </label>
                                         <input type="text" name="manual_lat" id="manual_lat"
                                                class="form-control directory_field"
-                                               placeholder="Enter Latitude eg. 24.89904">
+                                               name="latitude" placeholder="Enter Latitude eg. 24.89904">
                                     </div>
                                 </div>
                                 <div class="col-sm-6 mt-3 mt-sm-0">
@@ -317,7 +145,7 @@
                                         <label for="manual_lng" class="not_empty"> Longitude </label>
                                         <input type="text" name="manual_lng" id="manual_lng"
                                                class="form-control directory_field"
-                                               placeholder="Enter Longitude eg. 91.87198">
+                                               name="longitude" placeholder="Enter Longitude eg. 91.87198">
                                     </div>
                                 </div>
                                 <div class="col-md-12 col-sm-12">
@@ -350,7 +178,7 @@
                     <button type="submit" class="btn btn-primary btn-lg listing_submit_btn">Submit listing</button>
                 </div>
             </div><!-- ends: .col-lg-10 -->
-
+            </form>
         </div>
     </div>
 </section><!-- ends: .add-listing-wrapper -->

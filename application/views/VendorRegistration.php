@@ -33,11 +33,11 @@
                                 <label class="form-label">Pricing</label>
                                     <div class="select-basic">
                                         <select class="form-control" name="price">
-                                            <option value="0">Select Price Range</option>
-                                            <option value="4">Ultra High ($$$$)</option>
-                                            <option value="3">Expensive ($$$)</option>
-                                            <option value="2">Moderate ($$)</option>
-                                            <option value="1">Cheap ($)</option>
+                                            <option value="">Select Price Range</option>
+                                            <option value="Ultra high">Ultra High ($$$$)</option>
+                                            <option value="Expensive">Expensive ($$$)</option>
+                                            <option value="Moderate">Moderate ($$)</option>
+                                            <option value="Cheap">Cheap ($)</option>
                                         </select>
                                     </div>
                             </div>

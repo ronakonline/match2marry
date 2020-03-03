@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 20, 2020 at 04:31 PM
+-- Generation Time: Mar 03, 2020 at 05:41 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.1
 
@@ -45,6 +45,20 @@ CREATE TABLE `admin` (
 
 INSERT INTO `admin` (`id`, `username`, `email`, `Name`, `password`, `user_type`, `created_at`, `updated_at`) VALUES
 (1, 'Ronak', 'admin@admin.com', 'Ronak', '3e7bf1383bcdd338f3d837f3dc948f80', 2, '2020-01-27 18:49:17', '2020-01-27 18:49:17');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `bhours`
+--
+
+CREATE TABLE `bhours` (
+  `id` int(20) NOT NULL,
+  `lid` int(200) NOT NULL,
+  `did` int(200) NOT NULL,
+  `start_time` time NOT NULL,
+  `end_time` time NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -34080,6 +34094,60 @@ INSERT INTO `counties` (`id`, `state_id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `days`
+--
+
+CREATE TABLE `days` (
+  `id` int(11) NOT NULL,
+  `day` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `days`
+--
+
+INSERT INTO `days` (`id`, `day`) VALUES
+(1, 'saturday'),
+(2, 'sunday'),
+(3, 'monday'),
+(4, 'tuesday'),
+(5, 'wednesday'),
+(6, 'thursday'),
+(7, 'friday');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `listing`
+--
+
+CREATE TABLE `listing` (
+  `id` int(200) NOT NULL,
+  `vid` int(200) NOT NULL,
+  `title` varchar(200) NOT NULL,
+  `description` varchar(255) NOT NULL,
+  `tagline` varchar(50) NOT NULL,
+  `pricing` text NOT NULL,
+  `tags` varchar(255) NOT NULL,
+  `category` text NOT NULL,
+  `address` varchar(255) NOT NULL,
+  `telephone` int(12) NOT NULL,
+  `email` varchar(150) NOT NULL,
+  `website` varchar(255) NOT NULL,
+  `latitude` float NOT NULL,
+  `longitude` float NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `listing`
+--
+
+INSERT INTO `listing` (`id`, `vid`, `title`, `description`, `tagline`, `pricing`, `tags`, `category`, `address`, `telephone`, `email`, `website`, `latitude`, `longitude`) VALUES
+(1, 1, 'food', 'food', 'food', 'Ultra high', 'orange', '   Food', 'georgian college', 2147483647, 'food@mithai.com', 'foodforlife.com', 0, 0);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `live_users`
 --
 
@@ -34106,7 +34174,136 @@ INSERT INTO `live_users` (`id`, `ip`, `location`, `last_activity`) VALUES
 (10, '::1', '', '2020-02-20 11:18:39'),
 (11, '::1', '', '2020-02-20 11:18:58'),
 (12, '::1', '', '2020-02-20 11:25:22'),
-(13, '::1', '', '2020-02-20 15:30:06');
+(13, '::1', '', '2020-02-20 15:30:06'),
+(14, '::1', '', '2020-02-20 16:31:25'),
+(15, '::1', '', '2020-02-20 17:00:53'),
+(16, '::1', '', '2020-02-20 17:01:35'),
+(17, '::1', '', '2020-02-20 17:01:37'),
+(18, '::1', '', '2020-02-20 17:02:11'),
+(19, '::1', '', '2020-02-20 17:03:23'),
+(20, '::1', '', '2020-02-20 17:05:01'),
+(21, '::1', '', '2020-02-20 17:05:02'),
+(22, '::1', '', '2020-02-20 17:05:40'),
+(23, '::1', '', '2020-02-20 17:41:16'),
+(24, '::1', '', '2020-02-20 17:41:39'),
+(25, '::1', '', '2020-02-20 17:42:07'),
+(26, '::1', '', '2020-02-20 17:43:27'),
+(27, '::1', '', '2020-02-20 17:51:01'),
+(28, '::1', '', '2020-02-20 17:51:05'),
+(29, '::1', '', '2020-02-20 17:54:12'),
+(30, '::1', '', '2020-02-20 17:54:15'),
+(31, '::1', '', '2020-02-20 18:34:53'),
+(32, '::1', '', '2020-02-20 18:35:35'),
+(33, '::1', '', '2020-02-20 18:36:29'),
+(34, '::1', '', '2020-02-20 18:42:43'),
+(35, '::1', '', '2020-02-20 18:48:36'),
+(36, '::1', '', '2020-02-20 18:50:31'),
+(37, '::1', '', '2020-02-20 18:51:05'),
+(38, '::1', '', '2020-02-20 18:51:46'),
+(39, '::1', '', '2020-02-21 04:20:40'),
+(40, '::1', '', '2020-02-21 04:53:23'),
+(41, '::1', '', '2020-02-21 04:54:08'),
+(42, '::1', '', '2020-02-21 04:54:55'),
+(43, '::1', '', '2020-02-21 05:02:25'),
+(44, '::1', '', '2020-02-21 05:04:19'),
+(45, '::1', '', '2020-02-21 05:04:35'),
+(46, '::1', '', '2020-02-21 05:04:58'),
+(47, '::1', '', '2020-02-21 05:05:23'),
+(48, '::1', '', '2020-02-21 05:06:01'),
+(49, '::1', '', '2020-02-21 05:07:01'),
+(50, '::1', '', '2020-02-21 05:07:28'),
+(51, '::1', '', '2020-02-21 10:19:10'),
+(52, '::1', '', '2020-02-21 10:19:30'),
+(53, '::1', '', '2020-02-21 10:20:21'),
+(54, '::1', '', '2020-02-21 10:21:38'),
+(55, '::1', '', '2020-02-21 13:43:23'),
+(56, '::1', '', '2020-02-21 14:11:41'),
+(57, '::1', '', '2020-02-21 14:11:52'),
+(58, '::1', '', '2020-02-21 14:12:19'),
+(59, '::1', '', '2020-02-21 14:12:28'),
+(60, '::1', '', '2020-02-21 15:14:39'),
+(61, '::1', '', '2020-02-21 18:06:21'),
+(62, '::1', '', '2020-02-21 18:07:23'),
+(63, '::1', '', '2020-02-22 03:52:07'),
+(64, '::1', '', '2020-02-22 04:20:18'),
+(65, '::1', '', '2020-02-22 04:22:54'),
+(66, '::1', '', '2020-02-22 04:23:41'),
+(67, '::1', '', '2020-02-22 04:28:52'),
+(68, '::1', '', '2020-02-22 04:32:40'),
+(69, '::1', '', '2020-02-22 08:37:58'),
+(70, '::1', '', '2020-02-23 05:51:42'),
+(71, '::1', '', '2020-02-25 03:58:53'),
+(72, '::1', '', '2020-02-25 04:03:27'),
+(73, '::1', '', '2020-02-25 04:05:29'),
+(74, '::1', '', '2020-02-25 04:12:02'),
+(75, '::1', '', '2020-02-25 04:12:15'),
+(76, '::1', '', '2020-02-25 04:14:42'),
+(77, '::1', '', '2020-02-25 04:16:51'),
+(78, '::1', '', '2020-02-25 04:17:46'),
+(79, '::1', '', '2020-02-25 04:28:15'),
+(80, '::1', '', '2020-02-25 04:28:20'),
+(81, '::1', '', '2020-02-25 04:31:00'),
+(82, '::1', '', '2020-02-25 04:31:10'),
+(83, '::1', '', '2020-02-25 04:31:28'),
+(84, '::1', '', '2020-02-25 04:37:08'),
+(85, '::1', '', '2020-02-25 04:38:31'),
+(86, '::1', '', '2020-02-25 04:44:40'),
+(87, '::1', '', '2020-02-25 04:49:44'),
+(88, '::1', '', '2020-02-25 04:50:12'),
+(89, '::1', '', '2020-02-25 04:50:22'),
+(90, '::1', '', '2020-02-25 09:36:20'),
+(91, '::1', '', '2020-02-25 14:08:43'),
+(92, '::1', '', '2020-02-25 16:17:49'),
+(93, '::1', '', '2020-02-25 16:18:07'),
+(94, '::1', '', '2020-02-26 04:05:20'),
+(95, '::1', '', '2020-02-26 04:17:53'),
+(96, '::1', '', '2020-02-26 04:18:47'),
+(97, '::1', '', '2020-02-26 04:19:44'),
+(98, '::1', '', '2020-02-26 04:20:45'),
+(99, '::1', '', '2020-02-26 04:20:56'),
+(100, '::1', '', '2020-02-26 04:25:07'),
+(101, '::1', '', '2020-02-26 04:26:32'),
+(102, '::1', '', '2020-02-26 04:36:37'),
+(103, '::1', '', '2020-02-26 04:49:55'),
+(104, '::1', '', '2020-02-26 04:51:01'),
+(105, '::1', '', '2020-02-26 04:52:20'),
+(106, '::1', '', '2020-02-26 04:53:37'),
+(107, '::1', '', '2020-02-26 05:12:10'),
+(108, '::1', '', '2020-02-26 05:12:15'),
+(109, '::1', '', '2020-02-26 05:12:21'),
+(110, '::1', '', '2020-02-26 06:56:23'),
+(111, '::1', '', '2020-02-26 13:46:52'),
+(112, '::1', '', '2020-02-26 13:48:46'),
+(113, '::1', '', '2020-02-26 14:01:38'),
+(114, '::1', '', '2020-02-26 14:02:06'),
+(115, '::1', '', '2020-02-26 14:02:12'),
+(116, '::1', '', '2020-02-26 14:02:43'),
+(117, '::1', '', '2020-02-27 13:19:01'),
+(118, '::1', '', '2020-03-02 16:55:28'),
+(119, '::1', '', '2020-03-02 16:55:37'),
+(120, '::1', '', '2020-03-03 04:12:25'),
+(121, '::1', '', '2020-03-03 04:12:35'),
+(122, '::1', '', '2020-03-03 05:03:52'),
+(123, '::1', '', '2020-03-03 05:03:58'),
+(124, '::1', '', '2020-03-03 05:05:46'),
+(125, '::1', '', '2020-03-03 05:05:55'),
+(126, '::1', '', '2020-03-03 05:07:43'),
+(127, '::1', '', '2020-03-03 05:07:50'),
+(128, '::1', '', '2020-03-03 07:11:55'),
+(129, '::1', '', '2020-03-03 07:43:07'),
+(130, '::1', '', '2020-03-03 07:43:53'),
+(131, '::1', '', '2020-03-03 13:41:45'),
+(132, '::1', '', '2020-03-03 13:50:18'),
+(133, '::1', '', '2020-03-03 13:50:23'),
+(134, '::1', '', '2020-03-03 14:22:44'),
+(135, '::1', '', '2020-03-03 14:23:52'),
+(136, '::1', '', '2020-03-03 15:09:07'),
+(137, '::1', '', '2020-03-03 16:29:10'),
+(138, '::1', '', '2020-03-03 16:34:23'),
+(139, '::1', '', '2020-03-03 16:35:20'),
+(140, '::1', '', '2020-03-03 16:36:06'),
+(141, '::1', '', '2020-03-03 16:36:42'),
+(142, '::1', '', '2020-03-03 16:37:25');
 
 -- --------------------------------------------------------
 
@@ -34249,7 +34446,8 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `dob`, `gender`, `ncountry`, `nstate`, `ncity`, `ccountry`, `cstate`, `ccity`, `ms`, `children`, `height`, `inch`, `physique`, `health`, `wayofliving`, `tribe`, `religiouspractice`, `fiqh`, `wywm`, `nationality`, `education`, `wp`, `nativelanguage`, `languageknown`, `earningcurrency`, `monthlysalary`, `guardianname`, `gphone`, `idproof`, `profilephoto`, `biodata`, `facebook`, `live`) VALUES
 (13, 'Ronak', 'ronak@gmail.com', '202cb962ac59075b964b07152d234b70', '0000-00-00', 'male', '1', '4', '1501', '1', '3', '1018', 'Unmarried', 'No', 5, 7, 'Athletic', 'Healthy', '', 'Ansari', 'Soum', 'Hanafi', 'Within 3-4 months', 'Bangladeshi', 'B.Tech', 'Engineer', 'Bengali', 'English,Gujrati,Hindi', 'Bangladesh Taka', 123, 'Ronak', 654313, 'Requirements2.pdf', 'ACCA_Website_Redesign_RFP_-_Amendment_12.pdf', 'Soteka_Model2.pdf', '', 1),
-(14, 'Ronak', 'admiN@admin.com', '202cb962ac59075b964b07152d234b70', '0000-00-00', 'male', '1', '2', '602', '1', '4', '1501', 'Unmarried', 'No', 3, 2, 'Build Muscular', 'Minor health issue', 'Simple', 'Ghori', 'Hajj', 'Maliki', 'Within 5-6 months', 'Canadian', 'Post graduate', 'Engineer', 'English', 'English,Gujrati,Hindi', 'Bangladesh Taka', 213, 'Ronak', 23435431, 'Website_Proposal.pdf', 'Website_Proposal1.pdf', 'Website_Proposal2.pdf', 'sbsbsdbsdbs', 0);
+(14, 'Ronak', 'admiN@admin.com', '202cb962ac59075b964b07152d234b70', '0000-00-00', 'male', '1', '2', '602', '1', '4', '1501', 'Unmarried', 'No', 3, 2, 'Build Muscular', 'Minor health issue', 'Simple', 'Ghori', 'Hajj', 'Maliki', 'Within 5-6 months', 'Canadian', 'Post graduate', 'Engineer', 'English', 'English,Gujrati,Hindi', 'Bangladesh Taka', 213, 'Ronak', 23435431, 'Website_Proposal.pdf', 'Website_Proposal1.pdf', 'Website_Proposal2.pdf', 'sbsbsdbsdbs', 0),
+(15, 'yashdaiya', 'yashdaiya@gmail.com', 'a18cd028b52741c748c0129b201ae159', '0000-00-00', 'male', '1', '2', '628', '1', '2', '628', 'Unmarried', 'No', 5, 5, 'Athletic', 'Physically challenge', 'Simple', 'Baig', 'Soum', 'Shafai', 'As soon as possible', 'Australian', 'B.Tech', 'Engineer', 'Bengali', 'Bengali', 'Bahrain Dinar', 123456, 'kiran', 7894561230, 'yashdaiya-IP1582603873', 'yashdaiya-IP1582603873', 'yashdaiya-IP1582603873', 'rajuji', 1);
 
 -- --------------------------------------------------------
 
@@ -34262,7 +34460,7 @@ CREATE TABLE `vendors` (
   `title` text NOT NULL,
   `description` varchar(255) NOT NULL,
   `tagline` varchar(100) NOT NULL,
-  `price` int(20) NOT NULL,
+  `price` varchar(50) NOT NULL,
   `tags` varchar(255) NOT NULL,
   `category` text NOT NULL,
   `address` varchar(255) NOT NULL,
@@ -34277,7 +34475,7 @@ CREATE TABLE `vendors` (
 --
 
 INSERT INTO `vendors` (`id`, `title`, `description`, `tagline`, `price`, `tags`, `category`, `address`, `telephone`, `email`, `password`, `website`) VALUES
-(1, 'food', 'food', 'food', 2, 'white', 'Food', 'georgian college', 2147483647, 'vendors@mail.com', '5f1e273bf48c9ace2682ee3bbddde599', 'vendors.com');
+(1, 'Cloths', 'Wedding cloths are mandatory in everyone\'s marriage.We deliver all the happiness by our clothing service.', 'Wedding cloths makes you perfect', 'Moderate', 'white', 'Clothing', 'Gheekanta', 2147483647, 'cloths@clothing.com', '5f1e273bf48c9ace2682ee3bbddde599', 'ww.clothingiseverything.com');
 
 -- --------------------------------------------------------
 
@@ -77405,6 +77603,14 @@ ALTER TABLE `admin`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `bhours`
+--
+ALTER TABLE `bhours`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `days_fk` (`did`),
+  ADD KEY `listing_fk` (`lid`);
+
+--
 -- Indexes for table `cities`
 --
 ALTER TABLE `cities`
@@ -77419,6 +77625,19 @@ ALTER TABLE `counties`
   ADD PRIMARY KEY (`id`),
   ADD KEY `index_counties_on_name` (`name`),
   ADD KEY `index_counties_on_state_id` (`state_id`);
+
+--
+-- Indexes for table `days`
+--
+ALTER TABLE `days`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `listing`
+--
+ALTER TABLE `listing`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `vendor_fk` (`vid`);
 
 --
 -- Indexes for table `live_users`
@@ -77461,6 +77680,12 @@ ALTER TABLE `zipcodes`
 --
 
 --
+-- AUTO_INCREMENT for table `bhours`
+--
+ALTER TABLE `bhours`
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `cities`
 --
 ALTER TABLE `cities`
@@ -77473,10 +77698,22 @@ ALTER TABLE `counties`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3143;
 
 --
+-- AUTO_INCREMENT for table `days`
+--
+ALTER TABLE `days`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `listing`
+--
+ALTER TABLE `listing`
+  MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `live_users`
 --
 ALTER TABLE `live_users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=143;
 
 --
 -- AUTO_INCREMENT for table `states`
@@ -77488,19 +77725,36 @@ ALTER TABLE `states`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `vendors`
 --
 ALTER TABLE `vendors`
-  MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `zipcodes`
 --
 ALTER TABLE `zipcodes`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43037;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `bhours`
+--
+ALTER TABLE `bhours`
+  ADD CONSTRAINT `days_fk` FOREIGN KEY (`did`) REFERENCES `days` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE,
+  ADD CONSTRAINT `listing_fk` FOREIGN KEY (`lid`) REFERENCES `listing` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE;
+
+--
+-- Constraints for table `listing`
+--
+ALTER TABLE `listing`
+  ADD CONSTRAINT `vendor_fk` FOREIGN KEY (`vid`) REFERENCES `vendors` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

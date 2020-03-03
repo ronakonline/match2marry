@@ -10,15 +10,16 @@ class Vendor extends CI_Controller{
         $this->load->view('addlisting',$data);
     }
 
-//    public function addlisting(){
-//        if(isset($_SESSION['vendor'])){
-//            $data['page'] = 'Vendor registration';
-//            $data['link'] = 'VendorRegistration';
-//            $this->load->view('addlisting',$data);
-//        }else{
-//            redirect(base_url());
-//        }
-//    }
+    public function addlist(){
+        if(isset($_SESSION['vendor'])){
+
+            $data = $this->input->post();
+            print_r($data);
+            $this->load->model('Vendor_m');
+            $data = $this->Vendor_m->addlist($data);
+            //redirect(base_url());
+        }
+    }
 
     public function logout(){
         session_destroy();

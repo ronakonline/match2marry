@@ -3,8 +3,14 @@
         public function add($data){
             $this->load->database();
             $password = md5($data['password']);
-            $q = $this->db->query('insert into vendors values(null,"'.$data['title'].'","'.$data['description'].'","'.$data['tagline'].'",'.$data['price'].',"'.$data['tags'].'","'.$data['category'].'","'.$data['address'].'",'.$data['telephone'].',"'.$data['email'].'","'.$password.'","'.$data['website'].'")');
+            $q = $this->db->query('insert into vendors values(null,"'.$data['title'].'","'.$data['description'].'","'.$data['tagline'].'","'.$data['price'].'","'.$data['tags'].'","'.$data['category'].'","'.$data['address'].'",'.$data['telephone'].',"'.$data['email'].'","'.$password.'","'.$data['website'].'")');
             echo $q;
+        }
+
+        public function addlist($data){
+            $this->load->database();
+//          $q = $this->db->query('insert into bhours values(null,"''")');
+            $q = $this->db->query('insert into listing values(null,'.$_SESSION['vendor'][0]->id.',"'.$data['title'].'","'.$data['description'].'","'.$data['tagline'].'","'.$data['pricing'].'","'.$data['tags'].'","'.$data['category'].'","'.$data['address'].'",'.$data['telephone'].',"'.$data['email'].'","'.$data['website'].'",0,0)');
         }
 
         public function check($data){
